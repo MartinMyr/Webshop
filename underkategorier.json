@@ -1,76 +1,76 @@
 [
     {
         "id": 1,
-        "stadname": "El Gitarr",
+        "under": "El Gitarr",
         "huvudkategori": 1
         
     },{
         "id": 2,
-        "stadname": "El Bas",
+        "under": "El Bas",
         "huvudkategori": 2
     },{
         "id": 3,
-        "stadname": "Tillbehör",
+        "under": "Tillbehör",
         "huvudkategori": 1
     },{
         "id": 4,
-        "stadname": "Piano",
+        "under": "Piano",
         "huvudkategori": 3
     },{
         "id": 5,
-        "stadname": "Synth",
+        "under": "Synth",
         "huvudkategori": 3
     },{
         "id": 6,
-        "stadname": "Klassisk Gitarr",
+        "under": "Klassisk Gitarr",
         "huvudkategori": 1
     },{
         "id": 7,
-        "stadname": "Strängar",
+        "under": "Strängar",
         "huvudkategori": 1
     },{
         "id": 8,
-        "stadname": "Akustisk Bas",
+        "under": "Akustisk Bas",
         "huvudkategori": 2
     },{
         "id": 9,
-        "stadname": "Dragspel",
+        "under": "Dragspel",
         "huvudkategori": 3
     },{
         "id": 10,
-        "stadname": "Förstärkare",
+        "under": "Förstärkare",
         "huvudkategori": 1
     },{
         "id": 11,
-        "stadname": "USB Keyboard",
+        "under": "USB Keyboard",
         "huvudkategori": 3
     },{
         "id": 12,
-        "stadname": "Strängar",
+        "under": "Strängar",
         "huvudkategori": 2
     },{
         "id": 13,
-        "stadname": "Förstärkare",
+        "under": "Förstärkare",
         "huvudkategori": 2
     },{
         "id": 14,
-        "stadname": "Begagnat",
+        "under": "Begagnat",
         "huvudkategori": 1
     },{
         "id": 15,
-        "stadname": "Tillbehör",
+        "under": "Tillbehör",
         "huvudkategori": 2
     },{
         "id": 15,
-        "stadname": "Trumsett",
+        "under": "Trumsett",
         "huvudkategori": 4
     },{
         "id": 15,
-        "stadname": "Digitaltrummor",
+        "under": "Digitaltrummor",
         "huvudkategori": 4
     },{
         "id": 15,
-        "stadname": "Slagverk",
+        "under": "Slagverk",
         "huvudkategori": 4
     }
 ]

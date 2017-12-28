@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "countryname": "Gitarr"
+        "menyVal": "Gitarr"
     },{
         "id": 2,
-        "countryname": "Bas"
+        "menyVal": "Bas"
     },{
         "id": 3,
-        "countryname": "Klaviatur"
+        "menyVal": "Klaviatur"
     },{
         "id": 4,
-        "countryname": "Slagverk"
+        "menyVal": "Slagverk"
     }
 ]
