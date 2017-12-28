@@ -7,31 +7,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/1aeb977fee.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <title>SoundStore</title>
 </head>
 <body>
     <div id = "container">
-        <div id = "header">
-
-        </div>
-        <div id = "header2">
-            <div class = "logo">
-                <h1><a href = "index.html ">SoundStore</a></h1>
-            </div>
-            <div class = "cart">
-                    <i class="fa fa-shopping-cart  fa-3x" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div id = "header3">
-            <div class="navbar">
-                <a href="index.html">Hem</a>
-            
-            </div>
-        </div>
+            <div w3-include-html="meny.html"></div> 
         
         <img id = "headerPic" src = "headerPic.jpg">
      
        
+    <script> w3.includeHTML();</script>
     <script src = "script.js"></script>
 </body>
 </html>
