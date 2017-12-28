@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "menyVal": "Gitarr"
+        "menyVal": "Högtalare"
     },{
         "id": 2,
-        "menyVal": "Bas"
+        "menyVal": "Hörlurar"
     },{
         "id": 3,
-        "menyVal": "Klaviatur"
+        "menyVal": "Kablar"
     },{
         "id": 4,
-        "menyVal": "Slagverk"
+        "menyVal": "Tv och hemmabio"
     }
 ]

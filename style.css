@@ -16,8 +16,9 @@ margin:0;
     height:5vh;
     background-color:rgb(26, 25, 25);
     border-bottom:3px inset     rgba(19, 18, 18, 0.671);
-
 }
+
+
 #header2{
     display:flex;
     width:100%;
@@ -38,9 +39,9 @@ margin:0;
 
 }
 .cart{
- margin-left:60vw;  
+ padding-left:60vw;
  padding-top:1vh; 
-   
+  
 }
 
 /*Dropdown menyn*/
@@ -79,7 +80,7 @@ margin:0;
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn, #header a:hover {
-    background-color: red;
+    background-color: rgb(68, 64, 64);
   }
   
   /* Dropdown content (hidden by default) */

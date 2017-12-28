@@ -1,76 +1,68 @@
 [
     {
         "id": 1,
-        "under": "El Gitarr",
+        "under": "Golvhögtalare",
         "huvudkategori": 1
         
     },{
         "id": 2,
-        "under": "El Bas",
+        "under": "In ear",
         "huvudkategori": 2
     },{
         "id": 3,
-        "under": "Tillbehör",
+        "under": "Trådlösa högtalare",
         "huvudkategori": 1
     },{
         "id": 4,
-        "under": "Piano",
+        "under": "Högtalarkabel",
         "huvudkategori": 3
     },{
         "id": 5,
-        "under": "Synth",
+        "under": "HDMI kabel",
         "huvudkategori": 3
     },{
         "id": 6,
-        "under": "Klassisk Gitarr",
+        "under": "Baslåda",
         "huvudkategori": 1
     },{
         "id": 7,
-        "under": "Strängar",
+        "under": "Högtalarsystem",
         "huvudkategori": 1
     },{
         "id": 8,
-        "under": "Akustisk Bas",
+        "under": "On ear",
         "huvudkategori": 2
     },{
         "id": 9,
-        "under": "Dragspel",
+        "under": "Digitalkabel",
         "huvudkategori": 3
-    },{
-        "id": 10,
-        "under": "Förstärkare",
-        "huvudkategori": 1
     },{
         "id": 11,
-        "under": "USB Keyboard",
+        "under": "Strömkablar",
         "huvudkategori": 3
     },{
-        "id": 12,
-        "under": "Strängar",
-        "huvudkategori": 2
-    },{
         "id": 13,
-        "under": "Förstärkare",
-        "huvudkategori": 2
-    },{
-        "id": 14,
-        "under": "Begagnat",
-        "huvudkategori": 1
-    },{
-        "id": 15,
         "under": "Tillbehör",
         "huvudkategori": 2
     },{
         "id": 15,
-        "under": "Trumsett",
+        "under": "Sport",
+        "huvudkategori": 2
+    },{
+        "id": 15,
+        "under": "Tv",
         "huvudkategori": 4
     },{
         "id": 15,
-        "under": "Digitaltrummor",
+        "under": "Hemmabioreceiver",
         "huvudkategori": 4
     },{
         "id": 15,
-        "under": "Slagverk",
+        "under": "Blu-ray spelare",
+        "huvudkategori": 4
+    },{
+        "id": 16,
+        "under": "Projektorer",
         "huvudkategori": 4
     }
 ]
