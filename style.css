@@ -1,7 +1,9 @@
 body{
 padding:0;
 margin:0;
+
 }
+
 #headerPic{
     width:100%;
     height:60vh;
@@ -13,7 +15,7 @@ margin:0;
     display:flex;
     justify-content:flex-end;
     width:100%;
-    height:5vh;
+    height:30px;
     background-color:rgb(26, 25, 25);
     border-bottom:3px inset     rgba(19, 18, 18, 0.671);
 }
@@ -22,14 +24,14 @@ margin:0;
 #header2{
     display:flex;
     width:100%;
-    height:10vh;
+    height:50px;
     background-color:rgb(39, 38, 38);
     border-bottom:3px  inset   rgba(19, 18, 18, 0.671);
  
 }
 #header3{
     width:100%;
-    height:5vh; 
+    height:30px; 
     background-color:rgb(39, 38, 38);
 }
 .logo > h1{
@@ -40,8 +42,29 @@ margin:0;
 }
 .cart{
  padding-left:60vw;
- padding-top:1vh; 
+}
+
+#contactCard{
   
+  margin-top:5vh;
+  width:50vw;
+  background-color:rgb(213, 214, 209);
+  margin:auto;
+  display:flex;
+  justify-content: space-around;
+}
+leftRightCards{
+
+}
+iframe{
+  
+  justify-content: center;
+}
+#kontakt{
+  margin-top:5vh;
+  display:flex;
+  justify-content: center;
+  font-size:60px;
 }
 
 /*Dropdown menyn*/
