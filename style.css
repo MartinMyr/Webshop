@@ -45,8 +45,12 @@ margin:0;
  padding-left:60vw;
 }
 
+
+
+
+
+/*Kontakt Sidan*/
 #contactCard{
-  
   margin-top:5vh;
   width:50vw;
   background-color:rgb(213, 214, 209);
@@ -57,8 +61,9 @@ margin:0;
 leftRightCards{
 
 }
-iframe{
-   
+#gMaps{
+  display:flex;
+ justify-content: flex-end;  
 }
 #socialBar{
   width:100%;
@@ -71,12 +76,32 @@ iframe{
 .fa{
   margin-left:1vw;
 }
+
+.fa-facebook-official:hover{
+  color:#3b5998;
+}
+.fa-instagram:hover{
+  color:rgb(116, 47, 156);
+}
+.fa-twitter-square:hover{
+  color:#00aced;
+}
+.fa-envelope:hover{
+  color:#b4911d;
+}
+
+a:link{
+  color:black;
+}
 #kontakt{
   margin-top:5vh;
   display:flex;
   justify-content: center;
   font-size:60px;
 }
+/*Kontakt Sidan Slut*/
+
+
 
 /*Dropdown menyn*/
 /* Navbar container */
