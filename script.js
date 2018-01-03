@@ -29,10 +29,7 @@ $( document ).ready(function() {
         
  
     //Startup functions
-    status();
 
-    var user = "test";
-    var password = "password";
   
   
   
@@ -86,45 +83,5 @@ $( document ).ready(function() {
        
     }
    
-    //Login function
-
-    function status(){
-        if (sessionStorage.ourUser != null) {
-            showMemberPage();
-        } else {
-            showStartPage();
-        }
-    };
-
-
-    $("#submit").click(function () {
-        if ($("#username").val() == user && $("#password").val() == password) {
-            sessionStorage.ourUser = user;
-             showMemberPage(); 
-        }
-    });
-
-    $("#logOutButton").click(function () {
-        sessionStorage.removeItem("ourUser");
-        
-        
-        // location.reload();
-        showStartPage();
-
-    });
-    function showMemberPage() {
-        $("#logOutButton").show();
-        $(".formInlogg").hide();
-        $("#loginButton").hide();
-    };
-    function showStartPage() {
-        $(".formInlogg").hide();
-        $("#logOutButton").hide();
-        $("#loginButton").show();
-     };
-    
-    $( "#loginButton" ).click(function() {
-        $("#loginButton").hide(1500);
-        $(".formInlogg").show(1500);
-      });
+  
 });
