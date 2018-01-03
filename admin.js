@@ -72,7 +72,7 @@ $( document ).ready(function() {
       $( "#KundAdmin" ).click(function() {
         $("#content").empty();
         $("#content").append("<table id = 'kundTable'><tr> <th>Id</th><th>Email</th><th>Lösenord</th></tr></table>");
-        
+    
         for (i = 0; i < kundLista.length; i++) {
            
             $("#kundTable").append("<tr><th>"+kundLista[i].id + "</th>"+"<th>" + kundLista[i].email + "<th>"+kundLista[i].password + "</th>"+"</tr>");
