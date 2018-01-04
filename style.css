@@ -64,8 +64,15 @@ th{
 .cards{
   max-width:340px;
   margin-top:5vh;
-  margin-left:5vh;
+  margin-left:6vw;
   border:solid rgba(0, 0, 0, 0.39) 3px;
+  flex-direction: row;
+}
+.content{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  
 }
 .cardPic{
 
@@ -80,8 +87,19 @@ th{
   border-top:3px solid black;
   display:flex;
   justify-content: space-around;
- 
 }
+.buy{
+  background-color:rgb(5, 2, 2);
+  color:white;
+  padding:2%;
+}
+.buy:hover{
+  background-color:rgba(5, 2, 2, 0.288);
+}
+.buy > a:link{
+  color:white;
+}
+
 /*Produkt kort SLUT*/
 
 
