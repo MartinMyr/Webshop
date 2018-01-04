@@ -59,6 +59,30 @@ th{
   padding-top: 10vh;
   
 }
+/*Produkt kort*/
+
+.cards{
+  max-width:340px;
+  margin-top:5vh;
+  margin-left:5vh;
+  border:solid rgba(0, 0, 0, 0.39) 3px;
+}
+.cardPic{
+
+}
+.cardName,.cardInfo, .cardBuy {
+  text-align: center;
+}
+.cardInfo{
+  border-top:3px solid black;
+}
+.cardBuy{
+  border-top:3px solid black;
+  display:flex;
+  justify-content: space-around;
+ 
+}
+/*Produkt kort SLUT*/
 
 
 /*Kontakt Sidan*/

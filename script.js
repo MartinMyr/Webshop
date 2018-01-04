@@ -98,9 +98,9 @@ $( document ).ready(function() {
 
       
         
-        $("this,a").on("click", function(){
+        $(this).on("click", function(){
             for (i = 0; i < produkter.length; i++){
-                if(underKat[i].under === produkter[i].underKat && underKat[i].huvudkategori === produkter[i].huvudKat){
+                if(underKat[i].under == produkter[i].underKat && underKat[i].huvudkategori == produkter[i].huvudKat){
                     $("#content").append(produkter[i].prodName)
                 }
 
