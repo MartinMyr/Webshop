@@ -1,68 +1,84 @@
 [
     {
         "id": 1,
-        "under": "Golvhögtalare",
-        "huvudkategori": 1
+        "name": "Golvhögtalare",
+        "huvudkategori": 1,
+        "under": 2
         
     },{
         "id": 2,
-        "under": "In ear",
-        "huvudkategori": 2
+        "name": "In ear",
+        "huvudkategori": 2,
+        "under": 1
     },{
         "id": 3,
-        "under": "Trådlösa högtalare",
-        "huvudkategori": 1
+        "name": "Trådlösa högtalare",
+        "huvudkategori": 1,
+        "under": 4
     },{
         "id": 4,
-        "under": "Högtalarkabel",
-        "huvudkategori": 3
+        "name": "Högtalarkabel",
+        "huvudkategori": 3,
+        "under": 3
     },{
         "id": 5,
-        "under": "HDMI kabel",
-        "huvudkategori": 3
+        "name": "HDMI kabel",
+        "huvudkategori": 3,
+        "under": 2
     },{
         "id": 6,
-        "under": "Baslåda",
-        "huvudkategori": 1
+        "name": "Baslåda",
+        "huvudkategori": 1,
+        "under": 1
     },{
         "id": 7,
-        "under": "Högtalarsystem",
-        "huvudkategori": 1
+        "name": "Högtalarsystem",
+        "huvudkategori": 1,
+        "under": 3
     },{
         "id": 8,
-        "under": "On ear",
-        "huvudkategori": 2
+        "name": "On ear",
+        "huvudkategori": 2,
+        "under": 1
     },{
         "id": 9,
-        "under": "Digitalkabel",
-        "huvudkategori": 3
+        "name": "Digitalkabel",
+        "huvudkategori": 3,
+        "under": 1
     },{
         "id": 11,
-        "under": "Strömkablar",
-        "huvudkategori": 3
+        "name": "Strömkablar",
+        "huvudkategori": 3,
+        "under": 4
     },{
         "id": 13,
-        "under": "Tillbehör",
-        "huvudkategori": 2
+        "name": "Tillbehör",
+        "huvudkategori": 2,
+        "under": 4
     },{
         "id": 15,
-        "under": "Sport",
-        "huvudkategori": 2
+        "name": "Sport",
+        "huvudkategori": 2,
+        "under": 3
     },{
         "id": 15,
-        "under": "Tv",
-        "huvudkategori": 4
+        "name": "Tv",
+        "huvudkategori": 4,
+        "under": 4
     },{
         "id": 15,
-        "under": "Hemmabioreceiver",
-        "huvudkategori": 4
+        "name": "Hemmabioreceiver",
+        "huvudkategori": 4,
+        "under": 2
     },{
         "id": 15,
-        "under": "Blu-ray spelare",
-        "huvudkategori": 4
+        "name": "Blu-ray spelare",
+        "huvudkategori": 4,
+        "under": 1
     },{
         "id": 16,
-        "under": "Projektorer",
-        "huvudkategori": 4
+        "name": "Projektorer",
+        "huvudkategori": 4,
+        "under": 3
     }
 ]

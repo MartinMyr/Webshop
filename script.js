@@ -46,10 +46,10 @@ $( document ).ready(function() {
    
         //Funktion för sortering av Huvud och under meny
         underKat.sort(function(a, b){
-            var underA=a.under.toLowerCase(), underB=b.under.toLowerCase()
-            if (underA < underB) 
+            var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
+            if (nameA < nameB) 
                 return -1 
-            if (underA > underB)
+            if (nameA > nameB)
                 return 1
             return 0 
         });
@@ -74,12 +74,13 @@ $( document ).ready(function() {
             $(".navbar").append(headMenu);
            
            
+            
         };
             
         for (i = 0; i < underKat.length; i++){
             var underMenu;
             underMeny = '<a href="#">';
-            underMeny += underKat[i].under + "</a>";      
+            underMeny += underKat[i].name + "</a>";      
         
             if(underKat[i].huvudkategori === 1){
             $(".dropdown-content0").append(underMeny );
@@ -89,19 +90,24 @@ $( document ).ready(function() {
                 $(".dropdown-content2").append(underMeny );
             }else if (underKat[i].huvudkategori === 4){
                 $(".dropdown-content3").append(underMeny );
-            }      
+            };  
+            
+           
+           
         };
 
-        for (i = 0; i < produkter.length; i++) { 
-            $( "a" ).click(function() {
-                
-              
-               console.log(produkter[i].prodPrice)
-              });
-        }
-    
-   
- 
+      
+        
+        $("this,a").on("click", function(){
+            for (i = 0; i < produkter.length; i++){
+                if(underKat[i].under === produkter[i].underKat && underKat[i].huvudkategori === produkter[i].huvudKat){
+                    $("#content").append(produkter[i].prodName)
+                }
+
+               
+            }
+          
+        }); 
  
     });
            

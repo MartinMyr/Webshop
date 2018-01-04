@@ -1,10 +1,98 @@
 [
     {
         "id": 1,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
+        "prodName": "BASS8 baslåda",
+        "prodDesc": "BASS8 är en kompakt och välspelande subbas i elegant Argon-design. Med 8-tumselement och 100-watts förstärkare ger den ett par vanliga kompakta högtalare ett rejält tillskott i basen både till musik och filmljud. Svart eller vit.",
+        "prodPrice": 1998,
         "huvudKat": 1,
         "underKat": 1
+    },
+    {
+        "id": 2,
+        "prodName": "BASS10 baslåda",
+        "prodDesc": "BASS10 är en solid och välspelande subbas i elegant Argon-design. Med sitt 10-tumselement och sin 100-wattsförstärkare levererar den utan problem en djup och distinkt botten till både musik och filmljud i ett vanligt vardagsrum. Svart eller vit.",
+        "prodPrice": 2498,
+        "huvudKat": 1,
+        "underKat": 1
+    },
+    {
+        "id": 3,
+        "prodName": "BASS W8 trådlös subbas",
+        "prodDesc": "BASS W8 är en trådlös och potent 8-tums subbas som kommer att ge ett tungt tillskott i botten på ett par vanliga högtalare, både för musik och filmljud. Nu kan du äntligen få tung bas utan att få stora högtalare eller långa kablar på köpet. ",
+        "prodPrice": 2998,
+        "huvudKat": 1,
+        "underKat": 1
+    },
+    {
+        "id": 4,
+        "prodName": "SL-10S baslåda",
+        "prodDesc": "SL-10S är SL-seriens subbas som blir pricken över i hos dig som har en stereo eller hemmabio i SL-serien. Om du bara har fallit för den grymma Cerwin-Vega-upplevelsen så kan du också använda den tillsammans med högtalare från andra tillverkare.",
+        "prodPrice": 3398,
+        "huvudKat": 1,
+        "underKat": 1
+    },
+    {
+        "id": 5,
+        "prodName": "SL-8 Golvhögtalare ",
+        "prodDesc": "SL-8 ser kanske inte särskilt skräckinjagande ut, och den är ganska kompakt för att vara en Cerwin-Vega-högtalare. Men den döljer mer bas och större ljudtryck än du kan föreställa dig. En högtalare som rockar hårt i mindre rum!",
+        "prodPrice": 3469,
+        "huvudKat": 1,
+        "underKat": 2
+    },
+    {
+        "id": 6,
+        "prodName": "ALTO55 Golvhögtalare ",
+        "prodDesc": "ALTO55 är en relativt kompakt golvhögtalare som ger dig riktigt bra ljud och härlig design till ett förbluffande lågt pris. Här får du känna det där ljudtrycket i magen som sätter pricken över i för musikupplevelsen. Svart eller vit.",
+        "prodPrice": 3996,
+        "huvudKat": 1,
+        "underKat": 2
+    },
+    {
+        "id": 7,
+        "prodName": "ZENSOR 5 Golvhögtalare ",
+        "prodDesc": "ZENSOR 5 är en smal, kompakt och ekonomisk golvhögtalare som har ett snyggt och dynamiskt ljud med av äkta Hi-Fi-kvalitet. Med sin eleganta aluminiumfot och fräscha högglansfront kan den utan problem ingå i en modern inredning.",
+        "prodPrice": 4498,
+        "huvudKat": 1,
+        "underKat": 2
+    },
+    {
+        "id": 8,
+        "prodName": "SL-28 Golvhögtalare ",
+        "prodDesc": "SL-28 är en hyfsat kompakt men otroligt potent högtalare som kan leverera rejäla mängder bas och ljudtryck utan att du behöver fylla rummet med stora kabinett. Två 8-tumsbasar flyttar rejält med luft, så det är bara att bjuda in vännerna!",
+        "prodPrice": 3398,
+        "huvudKat": 1,
+        "underKat": 2
+    },
+    {
+        "id": 9,
+        "prodName": "ALTO Surround 5.1 Högtalarsystem ",
+        "prodDesc": "ALTO Surround är ett komplett, kompakt och prisvärt 5.1-högtalarsystem i stilren Argon-design. Här får du allt du behöver för att fylla vardagsrummet med härligt 5.1-kanals surroundljud utan att samtidigt behöva fylla det med högtalare. Svart eller vit.",
+        "prodPrice": 4998,
+        "huvudKat": 1,
+        "underKat": 3
+    },
+    {
+        "id": 10,
+        "prodName": "M-1 + ASW608 Högtalarsystem ",
+        "prodDesc": "M-1 är en exklusiv och superkompakt designhögtalare med unika tekniska lösningar. Ljudkvaliteten är ovanligt hög för en högtalare av den här typen. Här med subbaseb ASW 608.",
+        "prodPrice": 8894,
+        "huvudKat": 1,
+        "underKat": 3
+    },
+    {
+        "id": 11,
+        "prodName": "FAZON MIKRO + DALI E-9 F SUB Högtalarsystem ",
+        "prodDesc": "Läckert och ultrakompakt högtalarsystem som ger ett fint stereoljud utan stora högtalare. Elegant aluminiumfinish, flera färger. Inkl. väggfästen.",
+        "prodPrice": 7994,
+        "huvudKat": 1,
+        "underKat": 3
+    },
+    {
+        "id": 12,
+        "prodName": "M-1 + ASW608 Högtalarsystem ",
+        "prodDesc": "M-1 är en exklusiv och superkompakt designhögtalare med unika tekniska lösningar. Ljudkvaliteten är ovanligt hög för en högtalare av den här typen. Här med subbaseb ASW 608.",
+        "prodPrice": 8894,
+        "huvudKat": 1,
+        "underKat": 3
     }
 ]

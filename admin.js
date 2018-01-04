@@ -71,19 +71,16 @@ $( document ).ready(function() {
 
       $( "#KundAdmin" ).click(function() {
         $("#content").empty();
-        $("#content").append("<table id = 'kundTable'><tr> <th>Id</th><th>Email</th><th>Lösenord</th></tr></table>");
+        $("#content").append("<table class = 'kundTable'><tr> <th>Id:</th><th>Email:</th><th>Lösenord:</th></tr></table>");
     
         for (i = 0; i < kundLista.length; i++) {
            
-            $("#kundTable").append("<tr><th>"+kundLista[i].id + "</th>"+"<th>" + kundLista[i].email + "<th>"+kundLista[i].password + "</th>"+"</tr>");
-          
-               
+            $(".kundTable").append("<tr><th>"+kundLista[i].id + "</th>"+"<th>" + kundLista[i].email + "<th>"+kundLista[i].password + "</th>"+"</tr>");     
         }
-    
-        
       });
-      $( "#EpostAdmin" ).click(function() {
-       
+      $( "#epostAdmin" ).click(function() {
+        $("#content").empty();
+        $("#content").append("<table class = 'kundTable'><tr> <th>Email:</th><th>Nyhetsbrev:</th></tr></table>");   
       });
       $( "#orderAdmin" ).click(function() {
        

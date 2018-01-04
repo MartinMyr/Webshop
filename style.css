@@ -49,8 +49,16 @@ margin:0;
 
 th{
   border:1px solid;
+  font-size:25px;
+  text-align: center;
 }
 
+.kundTable{
+  display:flex;
+  justify-content: center;
+  padding-top: 10vh;
+  
+}
 
 
 /*Kontakt Sidan*/
