@@ -30,8 +30,13 @@ $( document ).ready(function() {
     {
         produkter = postsCollection2;
 
+
+        //Kundvagnsknappen
         $("#toCart").click(function() {
             $("#content").empty();
+            $("#backgroundContact").css("background-image","none");
+            $("#content").append("<div id = 'prodCardWrapper'></div")
+            $("#content").append("<h1>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>")
           });
                     
            
@@ -43,7 +48,7 @@ $( document ).ready(function() {
 
 
 
-
+          //Nyhetsemail klick
         $( "#newsLetter" ).click(function() {
             if($('#checkBoxNews').is(':checked')){
                 var customerEmail;
@@ -53,8 +58,13 @@ $( document ).ready(function() {
             }else {
                 console.log("bajs2")
             };
-          });
+        });
 
+
+
+
+
+        
             var slideIndex = 0;
         carousel();
 
