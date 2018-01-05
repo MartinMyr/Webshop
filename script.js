@@ -29,10 +29,10 @@ $( document ).ready(function() {
     .then(function(postsCollection2)
     {
         produkter = postsCollection2;
-               
-           
-           
-           
+
+        $("#toCart").click(function() {
+            $("#content").empty();
+          });
                     
            
                
@@ -40,6 +40,20 @@ $( document ).ready(function() {
  
         //Startup functions
         meny();
+
+
+
+
+        $( "#newsLetter" ).click(function() {
+            if($('#checkBoxNews').is(':checked')){
+                var customerEmail;
+                localStorage.locustomerEmail = JSON.stringify($("#custEmail").val());
+                
+                console.log(localStorage)
+            }else {
+                console.log("bajs2")
+            };
+          });
 
             var slideIndex = 0;
         carousel();
@@ -114,6 +128,10 @@ $( document ).ready(function() {
 
         };
         
+
+ 
+
+
         function addProduct(){
 
 

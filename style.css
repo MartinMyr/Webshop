@@ -67,6 +67,9 @@ display:flex;
 .cart{
  padding-left:60vw;
 }
+.cart>a:hover{
+  background-color:rgb(39, 38, 38);
+}
 
 #myCarousel{
   margin-top:5vh;
