@@ -85,7 +85,7 @@ $( document ).ready(function() {
             
 
                 var headMenu = '<div class="dropdown"><button class="dropbtn">'+ huvudKat[i].menyVal;
-                headMenu += '<div class="dropdown-content' + i + '">';
+                headMenu += '<div id ='+ i +' class="dropdown-content' + i + '">';
                 headMenu += '</button></div></div> ';
                 $(".navbar").append(headMenu);
             
@@ -95,7 +95,7 @@ $( document ).ready(function() {
                 
             for (i = 0; i < underKat.length; i++){
                 var underMenu;
-                underMeny = '<a href="#">';
+                underMeny = '<a id =' +i +' href="#">';
                 underMeny += underKat[i].name + "</a>";      
             
                 if(underKat[i].huvudkategori === 1){
@@ -106,7 +106,7 @@ $( document ).ready(function() {
                     $(".dropdown-content2").append(underMeny );
                 }else if (underKat[i].huvudkategori === 4){
                     $(".dropdown-content3").append(underMeny );
-                };  
+                }; 
                 
             
             
@@ -114,10 +114,15 @@ $( document ).ready(function() {
 
         };
         
+        function addProduct(){
+
+
+            
+        }
         $(this).on("click", function(){
             for (i = 0; i < produkter.length; i++){
                 if(underKat[i].under == produkter[i].underKat && underKat[i].huvudkategori == produkter[i].huvudKat){
-                    $("#content").append(produkter[i].prodName)
+                    console.log(produkter[i].prodName)
                 }
 
                
