@@ -1,39 +1,54 @@
 body{
+max-width:1920px; 
 padding:0;
-margin:0;
+margin:auto;
+
 }
 
-#headerPic{
-    width:100%;
-    height:60vh;
-    
+#backgroundContact{
+  background-image: url('kontaktpic.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+  
+}
+.mySlides{
+  width:100%;
+  height:60vh;
+}
+#slidefooter{
+  width:100%;
+  height:50px;
+  background-color:rgb(26, 25, 25);
 
+}
+#headerPic{
+  width:100%;
+  height:60vh;
 }
 #container{
-
+  align-items: center;
 }
 #header{
-    display:flex;
-    justify-content:flex-end;
-    width:100%;
-    height:30px;
-    background-color:rgb(26, 25, 25);
-    border-bottom:3px inset     rgba(19, 18, 18, 0.671);
+display:flex;
+  justify-content:flex-end;
+  width:100%;
+  height:30px;
+  background-color:rgb(26, 25, 25);
+  border-bottom:3px inset     rgba(19, 18, 18, 0.671);
 }
-
-
 #header2{
-    display:flex;
-    width:100%;
-    height:50px;
-    background-color:rgb(39, 38, 38);
-    border-bottom:3px  inset   rgba(19, 18, 18, 0.671);
- 
+  display:flex;
+  width:100%;
+  height:50px;
+  background-color:rgb(39, 38, 38);
+  border-bottom:3px  inset   rgba(19, 18, 18, 0.671); 
 }
 #header3{
-    width:100%;
-    height:30px; 
-    background-color:rgb(39, 38, 38);
+  width:100%;
+  height:30px; 
+  background-color:rgb(39, 38, 38);
 }
 .logo > h1{
   margin-left:10vw;
@@ -45,7 +60,9 @@ margin:0;
  padding-left:60vw;
 }
 
-
+#myCarousel{
+  margin-top:5vh;
+}
 
 th{
   border:1px solid;
@@ -105,9 +122,9 @@ th{
 
 /*Kontakt Sidan*/
 #contactCard{
-  margin-top:5vh;
+  margin-top:10vh;
   width:50vw;
-  background-color:rgb(213, 214, 209);
+  background-color:rgba(213, 214, 209, 0.699);
   margin:auto;
   display:flex;
   justify-content: space-around;
@@ -115,14 +132,15 @@ th{
 leftRightCards{
 
 }
-#gMaps{
+#iframeWrapper{
+  justify-content: center;
   display:flex;
- justify-content: flex-end;  
+  margin-top:10vh;
 }
 #socialBar{
   width:100%;
   height:50px;
-  background-color:rgb(213, 214, 209);
+  background-color:rgba(213, 214, 209, 0.233);
   margin-bottom: 6vh;
   justify-content: center;
   display:flex;
@@ -130,9 +148,9 @@ leftRightCards{
 .fa{
   margin-left:1vw;
 }
-
 .fa-facebook-official:hover{
   color:#3b5998;
+  background-color:none
 }
 .fa-instagram:hover{
   color:rgb(116, 47, 156);
@@ -143,12 +161,14 @@ leftRightCards{
 .fa-envelope:hover{
   color:#b4911d;
 }
-
-a:link{
+a:hover{
+  background-color:none;
+}
+a{
   color:black;
 }
 #kontakt{
-  margin-top:5vh;
+  margin-top:2vh;
   display:flex;
   justify-content: center;
   font-size:60px;
