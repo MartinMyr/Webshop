@@ -31,13 +31,7 @@ $( document ).ready(function() {
         produkter = postsCollection2;
 
 
-        //Kundvagnsknappen
-        $("#toCart").click(function() {
-            $("#content").empty();
-            $("#backgroundContact").css("background-image","none");
-            $("#content").append("<div id = 'prodCardWrapper'></div")
-            $("#content").append("<h1>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>")
-          });
+        
                     
            
                
@@ -47,6 +41,36 @@ $( document ).ready(function() {
         meny();
 
 
+
+
+
+
+        //Kundvagnen
+        $("#toCart").click(function() {
+            $("#content").empty();
+            $("#backgroundContact").css("background-image","none");
+            $("#content").append("<div id = 'prodCardWrapper'></div");
+            $("#content").append("<h1>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
+            
+            $("#member").click(function() {
+                $("#content").empty();
+               
+                var form = '<form class = memberForm>';
+                form += '<h4 class = "formName">Namn</h4><input id = "formName" type = "text" name = "Namn"><br>';
+                form += '<h4 class = "formName">Email</h4><input id = "formEmail" type = "email" name = "Email"><br>';
+                form += '<h4 class = "formName">Telefonnumer</h4><input id = "formNumber" type = "number" name = "Telefon"><br>';
+                form += '<h4 class = "formName">Nyhetsbrev</h4><input id ="checkBoxNews" type="checkbox"><br>';
+                form += '<h4 class = "formName">Lösenord</h4><input id = "password1" type = "password"><br>';
+                form += '<h4 class = "formName">Repetera lösenord</h4><input id = "password2" type = "password">';
+                form += '</form>'
+                $("#content").append("<h1 class = memberForm> Bli medlem</h1>")
+                $("#content").append(form);
+
+                
+                
+            });
+        });
+       
 
           //Nyhetsemail klick
         $( "#newsLetter" ).click(function() {

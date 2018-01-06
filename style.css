@@ -2,8 +2,8 @@ body{
 max-width:1920px; 
 padding:0;
 margin:auto;
-
 }
+
 
 #backgroundContact{
   background-image: url('kontaktpic.jpg');
@@ -63,6 +63,11 @@ display:flex;
   padding-top:12px;
   margin-top:0px;
 
+}
+
+
+.memberForm{
+  text-align: center;
 }
 .cart{
  padding-left:60vw;
