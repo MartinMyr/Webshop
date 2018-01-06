@@ -68,6 +68,7 @@ display:flex;
 
 .memberForm{
   text-align: center;
+  padding-top:3vh;
 }
 .cart{
  padding-left:60vw;

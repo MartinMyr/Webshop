@@ -31,6 +31,15 @@ $( document ).ready(function() {
         produkter = postsCollection2;
 
 
+        fetch("kunder.json")
+    .then(function(response)
+    {
+        return response.json();
+    })
+    .then(function(postsCollection3)
+    {
+        kundLista = postsCollection3;
+
         
                     
            
@@ -41,33 +50,43 @@ $( document ).ready(function() {
         meny();
 
 
-
+        console.log(kundLista)
 
 
 
         //Kundvagnen
         $("#toCart").click(function() {
+            cartRefresh();
+            function cartRefresh(){
             $("#content").empty();
             $("#backgroundContact").css("background-image","none");
             $("#content").append("<div id = 'prodCardWrapper'></div");
             $("#content").append("<h1>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
-            
+            }
             $("#member").click(function() {
                 $("#content").empty();
                
                 var form = '<form class = memberForm>';
-                form += '<h4 class = "formName">Namn</h4><input id = "formName" type = "text" name = "Namn"><br>';
-                form += '<h4 class = "formName">Email</h4><input id = "formEmail" type = "email" name = "Email"><br>';
-                form += '<h4 class = "formName">Telefonnumer</h4><input id = "formNumber" type = "number" name = "Telefon"><br>';
-                form += '<h4 class = "formName">Nyhetsbrev</h4><input id ="checkBoxNews" type="checkbox"><br>';
-                form += '<h4 class = "formName">Lösenord</h4><input id = "password1" type = "password"><br>';
-                form += '<h4 class = "formName">Repetera lösenord</h4><input id = "password2" type = "password">';
+                form += '<h4>Namn</h4><input id = "formName" type = "text" name = "Namn"><br>';
+                form += '<h4>Email</h4><input id = "formEmail" type = "email" name = "Email"><br>';
+                form += '<h4>Telefonnumer</h4><input id = "formNumber" type = "number" name = "Telefon"><br>';
+                form += '<h4>Nyhetsbrev</h4><input id ="checkBoxNews" type="checkbox"><br>';
+                form += '<h4>Lösenord</h4><input id = "password1" type = "password"><br>';
+                form += '<h4>Repetera lösenord</h4><input id = "password2" type = "password"><br><br>';
+                form += '<button id ="submitForm">Skicka</button>';
                 form += '</form>'
                 $("#content").append("<h1 class = memberForm> Bli medlem</h1>")
                 $("#content").append(form);
+   
+                $("#submitForm").click(function() {
+                    kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val()});
+                    localStorage.setItem('session', JSON.stringify(kundLista));
+                    console.log(localStorage);
+                    //cartRefresh();
+                   // $("#member").remove();
 
-                
-                
+
+                });  
             });
         });
        
@@ -184,6 +203,7 @@ $( document ).ready(function() {
  
     });
            
+    });
     });
     });
 
