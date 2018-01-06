@@ -60,8 +60,17 @@ $( document ).ready(function() {
             function cartRefresh(){
             $("#content").empty();
             $("#backgroundContact").css("background-image","none");
+           
+            var userLogin = ' <i class="fa fa-user" aria-hidden="true"></i>';
+            userLogin += '<input id = "username" type="text" name="username">';
+            userLogin += '<i class="fa fa-key" aria-hidden="true"></i>';
+            userLogin += '<input id = "password" type="password" name="psw">';
+            userLogin += '<button id = "submit">Ok</button>';
+            $("#content").append(userLogin);
+            
             $("#content").append("<div id = 'prodCardWrapper'></div");
             $("#content").append("<h1>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
+
             }
             $("#member").click(function() {
                 $("#content").empty();
