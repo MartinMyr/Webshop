@@ -4,12 +4,14 @@
         "name": "Janne Kemi",
         "email": "janne@hiveandfive.se",
         "number": "07954788857",
-        "password": "12345"
+        "password": "12345",
+        "newsletter":"yes"
     },{
         "id": 2,
         "name": "Janne Kemi",
         "email": "test@test.com",
         "number": "07954788857",
-        "password": "test"
+        "password": "test",
+        "newsletter":"no"
     }
 ]

@@ -50,7 +50,7 @@ $( document ).ready(function() {
         meny();
 
 
-        console.log(kundLista)
+   
 
 
 
@@ -79,11 +79,17 @@ $( document ).ready(function() {
                 $("#content").append(form);
    
                 $("#submitForm").click(function() {
-                    kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val()});
-                    localStorage.setItem('session', JSON.stringify(kundLista));
-                    console.log(localStorage);
+                    var members = [];
+                    if($('#checkBoxNews').is(':checked')){
+                        kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Ja"});
+                    }else{
+                        kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Nej"});
+                    }
+                    localStorage.setItem("members", JSON.stringify(kundLista));
+                    kundLista = JSON.parse(localStorage.getItem("members"));
+                    console.log(kundLista);
                     //cartRefresh();
-                   // $("#member").remove();
+                    // $("#member").remove();
 
 
                 });  

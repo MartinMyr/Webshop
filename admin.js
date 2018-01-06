@@ -71,16 +71,22 @@ $( document ).ready(function() {
 
       $( "#KundAdmin" ).click(function() {
         $("#content").empty();
-        $("#content").append("<table class = 'kundTable'><tr> <th>Id:</th><th>Email:</th><th>Lösenord:</th></tr></table>");
+        $("#content").append("<table class = 'kundTable'><tr> <th>Id:</th><th>Email:</th><th>Telefon:</th><th>Lösenord:</th></tr></table>");
+        members = JSON.parse(localStorage.getItem("members"));
     
-        for (i = 0; i < kundLista.length; i++) {
+        for (i = 0; i < members.length; i++) {
            
-            $(".kundTable").append("<tr><th>"+kundLista[i].id + "</th>"+"<th>" + kundLista[i].email + "<th>"+kundLista[i].password + "</th>"+"</tr>");     
+            $(".kundTable").append("<tr><th>"+members[i].id + "</th>"+"<th>" + members[i].email + "<th>" + members[i].number + "</th>"+ "<th>"+members[i].password + "</th>"+"</tr>");     
         }
       });
       $( "#epostAdmin" ).click(function() {
         $("#content").empty();
-        $("#content").append("<table class = 'kundTable'><tr> <th>Email:</th><th>Nyhetsbrev:</th></tr></table>");   
+        $("#content").append("<table class = 'kundTable'><tr> <th>Email:</th><th>Nyhetsbrev:</th></tr></table>"); 
+        members = JSON.parse(localStorage.getItem("members"));  
+        for (i = 0; i < members.length; i++) {
+            $(".kundTable").append("<tr><th>"+members[i].email+"</tr></th>")
+        }
+
       });
       $( "#orderAdmin" ).click(function() {
        
