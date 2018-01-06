@@ -82,11 +82,17 @@ $( document ).ready(function() {
       $( "#epostAdmin" ).click(function() {
         $("#content").empty();
         $("#content").append("<table class = 'kundTable'><tr> <th>Email:</th><th>Nyhetsbrev:</th></tr></table>"); 
+        $("#content").append("<h2 class = 'memberForm'>Kopiera för att skicka mail här:</h2><br><ul id ='emailCopy'></ul>")
         members = JSON.parse(localStorage.getItem("members"));  
         for (i = 0; i < members.length; i++) {
-            $(".kundTable").append("<tr><th>"+members[i].email+"</tr></th>")
-        }
-
+            $(".kundTable").append("<tr><th>"+members[i].email+"</th><th>"+members[i].newsletter+"</th></tr>")
+            if(members[i].newsletter === "Ja"){
+                $("#emailCopy").append("<li class = 'memberForm'>"+members[i].email+", </li>")
+            };
+            
+        };
+       
+       
       });
       $( "#orderAdmin" ).click(function() {
        

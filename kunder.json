@@ -5,13 +5,13 @@
         "email": "janne@hiveandfive.se",
         "number": "07954788857",
         "password": "12345",
-        "newsletter":"yes"
+        "newsletter":"Ja"
     },{
         "id": 2,
         "name": "Janne Kemi",
         "email": "test@test.com",
         "number": "07954788857",
         "password": "test",
-        "newsletter":"no"
+        "newsletter":"Nej"
     }
 ]

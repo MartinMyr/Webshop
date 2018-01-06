@@ -70,6 +70,12 @@ display:flex;
   text-align: center;
   padding-top:3vh;
 }
+#emailP{
+  flex-direction: row;
+  display:flex;
+}
+ul{list-style: none;
+}
 .cart{
  padding-left:60vw;
 }
