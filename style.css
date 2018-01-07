@@ -11,7 +11,6 @@ margin:auto;
   background-attachment: fixed;
   background-position: center;
   background-size:cover;
-  
 }
 .mySlides{
   width:100%;
@@ -62,13 +61,12 @@ display:flex;
   margin-left:10vw;
   padding-top:12px;
   margin-top:0px;
-
 }
 
 
-.memberForm{
+.memberForm,#cartH1{
   text-align: center;
-  padding-top:3vh;
+  padding-top:2vh;
 }
 #emailP{
   flex-direction: row;
@@ -81,6 +79,11 @@ ul{list-style: none;
 }
 .cart>a:hover{
   background-color:rgb(39, 38, 38);
+}
+#userLogin{
+ text-align: end;
+  margin-right: 2vw;
+  margin-top: 2vh;
 }
 
 #myCarousel{

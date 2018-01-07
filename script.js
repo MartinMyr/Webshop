@@ -48,9 +48,7 @@ $( document ).ready(function() {
  
         //Startup functions
         meny();
-
-
-   
+       
 
 
 
@@ -61,15 +59,15 @@ $( document ).ready(function() {
             $("#content").empty();
             $("#backgroundContact").css("background-image","none");
            
-            var userLogin = ' <i class="fa fa-user" aria-hidden="true"></i>';
+            var userLogin = '<div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
             userLogin += '<input id = "username" type="text" name="username">';
             userLogin += '<i class="fa fa-key" aria-hidden="true"></i>';
             userLogin += '<input id = "password" type="password" name="psw">';
-            userLogin += '<button id = "submit">Ok</button>';
+            userLogin += '<button id = "submit">Ok</button></div>';
             $("#content").append(userLogin);
             
             $("#content").append("<div id = 'prodCardWrapper'></div");
-            $("#content").append("<h1>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
+            $("#content").append("<h1 id = 'cartH1'>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
 
             }
             $("#member").click(function() {
@@ -100,27 +98,13 @@ $( document ).ready(function() {
                     //cartRefresh();
                     // $("#member").remove();
 
-
                 });  
             });
         });
        
 
-          //Nyhetsemail klick
-        $( "#newsLetter" ).click(function() {
-            if($('#checkBoxNews').is(':checked')){
-                var customerEmail;
-                localStorage.locustomerEmail = JSON.stringify($("#custEmail").val());
-                
-                console.log(localStorage)
-            }else {
-                console.log("bajs2")
-            };
-        });
 
-
-
-
+   
 
         
             var slideIndex = 0;
