@@ -109,39 +109,75 @@
     },
     {
         "id": 13,
-        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
-        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
-        "prodPrice": 9493,
+        "prodName": "YOYO S BLUETOOTH HÖGTALARE",
+        "prodDesc": "Yoyo (S) är en snygg, ultrakompakt trådlös högtalare klädd i lyxig brittisk ull. Inbyggt batteri och imponerande ljudkvalitet i förhållande till storleken. Du kan spela trådlöst i upp till 14 timmar och ladda dina enheter via USB. Flera snygga färger.",
+        "prodPrice": 1398,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/PICO.jpg"
+        "prodImage":"/prodPics/YOYO.jpg"
     },
     {
         "id": 14,
-        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
-        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
-        "prodPrice": 9493,
+        "prodName": "JBL FLIP 4 BLUETOOTH HÖGTALARE",
+        "prodDesc": "Flip 4 är en liten trådlös Bluetooth-högtalare som du enkelt kan ta med dig överallt. Den är robust, slitstark och vattentät, så den håller för att hänga med dig som har en aktiv livsstil. Spelar 12 timmar på en laddning. Flera färger.",
+        "prodPrice": 1390,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/PICO.jpg"
+        "prodImage":"/prodPics/JBLFLIP4.jpg"
     },
     {
         "id": 15,
-        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
-        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
-        "prodPrice": 9493,
+        "prodName": "Envaya DSB-200 bluetooth högtalare",
+        "prodDesc": "Envaya är den perfekta partnern till din mobila musik. Både ljud och finish tillhör den läckra klassen, och med Bluetooth och inbyggt batteri kan du spela musik överallt där du har en mobil, smartphone eller surfplatta till hands. Vit eller svart.",
+        "prodPrice": 1298,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/PICO.jpg"
+        "prodImage":"/prodPics/EnvayaDSB-200.jpg"
     },
     {
         "id": 16,
-        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
-        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
-        "prodPrice": 9493,
+        "prodName": "Envaya Pocket bluetooth högtalare",
+        "prodDesc": "Envaya Pocket är en ultrakompakt och vattentät Bluetooth-högtalare som du enkelt kan ta med dig överallt. Du kan spela upp till 10 timmar på en laddning och använda högtalaren som handsfree till telefonen, inkl. Apple Siri. Flera färger.",
+        "prodPrice": 998,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/PICO.jpg"
+        "prodImage":"/prodPics/Envayapocket.jpg"
+    },
+    {
+        "id": 17,
+        "prodName": "AH-C260 IN-EAR HÖRLUR",
+        "prodDesc": "AH-C260 är ett par smarta och välspelande in-ear -hörlurar. Ergonomisk design och avancerad teknik gör att du kan se fram emot en upplevelse som vida överträffar den du får med billiga no-name-proppar. Silverfinish.",
+        "prodPrice": 248,
+        "huvudKat": 2,
+        "underKat": 1,
+        "prodImage":"/prodPics/AH-C260.jpg"
+    },
+    {
+        "id": 18,
+        "prodName": "EP1 IN-EAR HÖRLUR",
+        "prodDesc": "EP1 är rena rama fyndet om du vill ha ett vuxet ljud från din bärbara utrustning, samtidigt som du vill få plats med den i fickan. Bra ljuddämpning får du på köpet.",
+        "prodPrice": 398,
+        "huvudKat": 2,
+        "underKat": 1,
+        "prodImage":"/prodPics/EP1.jpg"
+    },
+    {
+        "id": 19,
+        "prodName": "AH-C50MA IN-EAR HÖRLUR",
+        "prodDesc": "AH-C50MA är ett par läckra in-ear-hörlurar som ger en väldigt neutral och detaljerad återgivning av all slags musik. En ergonomisk design och 4 olika adaptrar gör att du kan få en optimal anpassning till dina öron. Smartphone-kontroll på kabeln.",
+        "prodPrice": 498,
+        "huvudKat": 2,
+        "underKat": 1,
+        "prodImage":"/prodPics/AH-C50MA.jpg"
+    },
+    {
+        "id": 20,
+        "prodName": "MA750 IN-EAR HÖRLUR",
+        "prodDesc": "MA750 är ett par otroligt läckra in-ear-hörlurar. Avancerad teknik säkerställer enastående ljudprestanda, samtidigt som brusreducerande design och 9 medföljande par öronadaptrar ger dig många bekväma lyssningstimmar.",
+        "prodPrice": 890,
+        "huvudKat": 2,
+        "underKat": 1,
+        "prodImage":"/prodPics/MA750.jpg"
     }
    
 ]

@@ -209,16 +209,27 @@ $( document ).ready(function() {
                 for (i = 0; i < underKat.length; i++){
                 for (j = 0; j < produkter.length; j++){
                     
-                    if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name){
+                    if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name && produkter[j].huvudKat == underKat[i].huvudkategori){
                         var appendCard = '<div class = "cards">';
                         appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
                         appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
-                        appendCard += '<div class = "cardInfo"><p>'+ produkter[j].prodDesc +'</p></div>';
+                        appendCard += '<div class = "cardInfo"><p></p></div>';
                         appendCard += '<div class = "cardBuy">';
                         appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
-                        appendCard += '<a class = "buyProd" href = "#">Köp</a></h3></div></div>';
+                        appendCard += '<a class = "buyProd" href = "#">Köp</a></h3></div><h3 class = "showMore">Visa mer';
+                        appendCard += '</h3></div>';
                         
                         $(".prodCardWrapper").append(appendCard);
+                        $(".showMore").on("click", function() {
+                            var sendToCart = $(event.currentTarget).parent().html();
+                            
+                            $(".prodCardWrapper").empty();
+                            $(".prodCardWrapper").append('<div class = "cards"></div>')
+                            $(".cards").append(sendToCart);
+                            $(".cardInfo").append(produkter[j].prodDesc)  //BÖRJA HÄR!
+                                console.log(sendToCart)
+
+                        });
                     }   
                    
                    
@@ -229,7 +240,7 @@ $( document ).ready(function() {
  
                     var sendToCart = $(event.currentTarget).parent().parent().parent().html();
                     var cartArray = [];
-                    cartArray.push(sendToCart++);
+                    cartArray.push(sendToCart);
                     sessionStorage.setItem("cart", JSON.stringify(cartArray));
                     $("")
                 });
