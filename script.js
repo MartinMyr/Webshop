@@ -59,7 +59,7 @@ $( document ).ready(function() {
             $("#backgroundContact").css("background-image","none");
            
             
-            var userLogin = '<div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
+            var userLogin = '<span id = "totPrice"></span><div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
             userLogin += '<input id = "username" type="text" name="username">';
             userLogin += '<i class="fa fa-key" aria-hidden="true"></i>';
             userLogin += '<input id = "password" type="password" name="psw">';
@@ -72,14 +72,22 @@ $( document ).ready(function() {
 
             }
 
-            
+            //Skicka med från köp till kundvagn
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
             for (i = 0; i < sendToCart.length; i++) { 
                 
                 $(".prodCardWrapper").append('<div class = "cards">'+sendToCart+'</div>');
                 $(".buy").remove();
-                console.log()
+               
             } 
+                
+            if  (sessionStorage.getItem("cart") === null) {
+                console.log("Du har inget i kundvagnen")
+            }else{
+               var myInteger = parseInt($("h3").text());
+               $("#totPrice").append( myInteger + "+ 55kr i frakt. Totalt:" + Number(myInteger + 55)) 
+               console.log(myInteger)
+            }
 
             $("#member").click(function() {
                 $("#content").empty();
@@ -216,27 +224,23 @@ $( document ).ready(function() {
                    
                 }
                 }; 
-                
+
                 $(".buyProd").on("click",function(event) {
  
                     var sendToCart = $(event.currentTarget).parent().parent().parent().html();
                     var cartArray = [];
                     cartArray.push(sendToCart);
                     sessionStorage.setItem("cart", JSON.stringify(cartArray));
-   
+                    $("")
                 });
             }); 
 
              
 
         }; 
-        
-
        
 
-        function addProduct(){
-  
-        }
+    
        
  
     });
