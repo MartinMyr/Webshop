@@ -41,9 +41,6 @@ $( document ).ready(function() {
         kundLista = postsCollection3;
 
         
-                    
-           
-               
         
  
         //Startup functions
@@ -87,16 +84,19 @@ $( document ).ready(function() {
    
                 $("#submitForm").click(function() {
                     var members = [];
+                  if($("#password1").val() == $("#password2").val()){
                     if($('#checkBoxNews').is(':checked')){
                         kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Ja"});
+                        cartRefresh();
+                        $("#member").remove();
                     }else{
                         kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Nej"});
+                        cartRefresh();
+                        $("#member").remove();
                     }
-                    localStorage.setItem("members", JSON.stringify(kundLista));
-                    kundLista = JSON.parse(localStorage.getItem("members"));
-                    console.log(kundLista);
-                    //cartRefresh();
-                    // $("#member").remove();
+                  }else{
+                      alert("Lösenorden matchar inte!! :(")
+                  }
 
                 });  
             });
@@ -106,7 +106,7 @@ $( document ).ready(function() {
 
    
 
-        
+        //BildKarusellen        
             var slideIndex = 0;
         carousel();
 
@@ -127,32 +127,18 @@ $( document ).ready(function() {
    
         //Funktion för sortering av Huvud och under meny
         function meny(){
-            underKat.sort(function(a, b){
-                var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
-                if (nameA < nameB) 
-                    return -1 
-                if (nameA > nameB)
-                    return 1
-                return 0 
-            });
+           
 
-            huvudKat.sort(function(a, b){
-                var menyValA=a.menyVal.toLowerCase(), menyValB=b.menyVal.toLowerCase()
-                if (menyValA < menyValB) 
-                    return -1 
-                if (menyValA > menyValB)
-                    return 1
-                return 0 
-            });
+           
             //Funktion för sortering av Huvud och under meny SLUT
 
 
             for (i = 0; i < huvudKat.length; i++) { 
             
 
-                var headMenu = '<div class="dropdown"><button class="dropbtn">'+ huvudKat[i].menyVal;
-                headMenu += '<div id ='+ i +' class="dropdown-content' + i + '">';
-                headMenu += '</button></div></div> ';
+                var headMenu = '<div class="dropdown"><button id = "'+i+'" class="dropbtn">'+ huvudKat[i].menyVal;
+                headMenu += '<div class="dropdown-content' + i + '">';
+                headMenu += '</button></div>';
                 $(".navbar").append(headMenu);
             
             
@@ -161,44 +147,51 @@ $( document ).ready(function() {
                 
             for (i = 0; i < underKat.length; i++){
                 var underMenu;
-                underMeny = '<a id =' +i +' href="#">';
+                underMeny = '<a id =' + i +' href="#" class="underMeny">';
                 underMeny += underKat[i].name + "</a>";      
             
                 if(underKat[i].huvudkategori === 1){
-                $(".dropdown-content0").append(underMeny );
+                    $(".dropdown-content0").append(underMeny );
                 }else if(underKat[i].huvudkategori === 2){
                     $(".dropdown-content1").append(underMeny );
                 }else if(underKat[i].huvudkategori === 3){
                     $(".dropdown-content2").append(underMeny );
                 }else if (underKat[i].huvudkategori === 4){
                     $(".dropdown-content3").append(underMeny );
-                }; 
-                
-            
-            
+                }
             };
+           
+            $(".dropdown").on("click", "a.underMeny", function() {
+                $(".prodCardWrapper").empty();
 
-        };
+                for (i = 0; i < underKat.length; i++){
+                for (j = 0; j < produkter.length; j++){
+                    
+                    if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name){
+                        var appendCard = '<div class = "cards">';
+                        appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
+                        appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
+                        appendCard += '<div class = "cardInfo"><p>'+ produkter[j].prodDesc +'</p></div>';
+                        appendCard += '<div class = "cardBuy">';
+                        appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
+                        appendCard += '<a href = "#">Köp</a></h3></div></div>';
+                        
+                        $(".prodCardWrapper").append(appendCard);
+                    }   
+                   
+                   
+                }
+                }; 
+            }); 
+        }; 
         
 
- 
-
+       
 
         function addProduct(){
-
-
-            
+  
         }
-        $(this).on("click", function(){
-            for (i = 0; i < produkter.length; i++){
-                if(underKat[i].under == produkter[i].underKat && underKat[i].huvudkategori == produkter[i].huvudKat){
-                    console.log(produkter[i].prodName)
-                }
-
-               
-            }
-          
-        }); 
+       
  
     });
            

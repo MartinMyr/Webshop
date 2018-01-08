@@ -51,17 +51,17 @@
         "huvudkategori": 3,
         "under": 4
     },{
-        "id": 13,
+        "id": 12,
         "name": "Tillbehör",
         "huvudkategori": 2,
         "under": 4
     },{
-        "id": 15,
+        "id": 13,
         "name": "Sport",
         "huvudkategori": 2,
         "under": 3
     },{
-        "id": 15,
+        "id": 14,
         "name": "Tv",
         "huvudkategori": 4,
         "under": 4
@@ -71,12 +71,12 @@
         "huvudkategori": 4,
         "under": 2
     },{
-        "id": 15,
+        "id": 16,
         "name": "Blu-ray spelare",
         "huvudkategori": 4,
         "under": 1
     },{
-        "id": 16,
+        "id": 17,
         "name": "Projektorer",
         "huvudkategori": 4,
         "under": 3
