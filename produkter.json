@@ -106,6 +106,42 @@
         "huvudKat": 1,
         "underKat": 3,
         "prodImage":"/prodPics/PICO.jpg"
+    },
+    {
+        "id": 13,
+        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
+        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
+        "prodPrice": 9493,
+        "huvudKat": 1,
+        "underKat": 4,
+        "prodImage":"/prodPics/PICO.jpg"
+    },
+    {
+        "id": 14,
+        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
+        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
+        "prodPrice": 9493,
+        "huvudKat": 1,
+        "underKat": 4,
+        "prodImage":"/prodPics/PICO.jpg"
+    },
+    {
+        "id": 15,
+        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
+        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
+        "prodPrice": 9493,
+        "huvudKat": 1,
+        "underKat": 4,
+        "prodImage":"/prodPics/PICO.jpg"
+    },
+    {
+        "id": 16,
+        "prodName": "ZENSOR PICO 5.1 HÖGTALARSYSTEM",
+        "prodDesc": "ZENSOR PICO är äkta hi-fi i förbluffande litet format, inkl. subbasen på 9 tum, som ger dig solid botten i ljudet. Övertygande ljudkvalitet som nästan inte tar någon plats!",
+        "prodPrice": 9493,
+        "huvudKat": 1,
+        "underKat": 4,
+        "prodImage":"/prodPics/PICO.jpg"
     }
    
 ]

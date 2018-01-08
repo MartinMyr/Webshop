@@ -49,6 +49,8 @@ $( document ).ready(function() {
 
 
 
+        
+
         //Kundvagnen
         $("#toCart").click(function() {
             cartRefresh();
@@ -56,15 +58,17 @@ $( document ).ready(function() {
             $("#content").empty();
             $("#backgroundContact").css("background-image","none");
            
+            
             var userLogin = '<div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
             userLogin += '<input id = "username" type="text" name="username">';
             userLogin += '<i class="fa fa-key" aria-hidden="true"></i>';
             userLogin += '<input id = "password" type="password" name="psw">';
             userLogin += '<button id = "submit">Ok</button></div>';
             $("#content").append(userLogin);
-            
+            $("#content").append("<h1 id = 'cartH1'>Varukorgen</h1>")
+
             $("#content").append("<div class = 'prodCardWrapper'></div");
-            $("#content").append("<h1 id = 'cartH1'>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
+            $("#content").append("<button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
 
             }
 
@@ -72,8 +76,9 @@ $( document ).ready(function() {
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
             for (i = 0; i < sendToCart.length; i++) { 
                 
-                $(".prodCardWrapper").append(sendToCart);
-                console.log(sendToCart)
+                $(".prodCardWrapper").append('<div class = "cards">'+sendToCart+'</div>');
+                $(".buy").remove();
+                console.log()
             } 
 
             $("#member").click(function() {
@@ -132,14 +137,34 @@ $( document ).ready(function() {
         };
   
   
-  
-   
-        //Funktion för sortering av Huvud och under meny
-        function meny(){
-           
 
-           
+   
+        
+      
+        
+        
+        function meny(){
+
+            //Funktion för sortering av Huvud och under meny
+            underKat.sort(function(a, b){
+                var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
+                if (nameA < nameB) 
+                    return -1 
+                if (nameA > nameB)
+                    return 1
+                return 0 
+            });
+            huvudKat.sort(function(a, b){
+                var menyValA=a.menyVal.toLowerCase(), menyValB=b.menyVal.toLowerCase()
+                if (menyValA < menyValB) 
+                    return -1 
+                if (menyValA > menyValB)
+                    return 1
+                return 0 
+            });
             //Funktion för sortering av Huvud och under meny SLUT
+           
+           
 
 
             for (i = 0; i < huvudKat.length; i++) { 
@@ -191,6 +216,7 @@ $( document ).ready(function() {
                    
                 }
                 }; 
+                
                 $(".buyProd").on("click",function(event) {
  
                     var sendToCart = $(event.currentTarget).parent().parent().parent().html();
@@ -201,7 +227,7 @@ $( document ).ready(function() {
                 });
             }); 
 
-           
+             
 
         }; 
         

@@ -142,7 +142,12 @@ th{
 .buy > a:link{
   color:white;
 }
+#member {
+  margin-left:50%;
+  justify-content:center;
 
+  
+}
 /*Produkt kort SLUT*/
 
 
