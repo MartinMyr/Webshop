@@ -229,7 +229,7 @@ $( document ).ready(function() {
  
                     var sendToCart = $(event.currentTarget).parent().parent().parent().html();
                     var cartArray = [];
-                    cartArray.push(sendToCart);
+                    cartArray.push(sendToCart++);
                     sessionStorage.setItem("cart", JSON.stringify(cartArray));
                     $("")
                 });
@@ -240,7 +240,7 @@ $( document ).ready(function() {
         }; 
        
 
-    
+    console.log(sendToCart)
        
  
     });

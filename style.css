@@ -19,7 +19,7 @@ margin:auto;
 #slidefooter{
   width:100%;
   height:50px;
-  background-color:rgb(26, 25, 25);
+  background-color:rgb(39, 38, 38);
   display:flex;
   justify-content: space-around;
 }
@@ -37,8 +37,11 @@ margin:auto;
 #container{
   align-items: center;
 }
+#content{
+  margin-bottom:80px;
+}
 #header{
-display:flex;
+  display:flex;
   justify-content:flex-end;
   width:100%;
   height:30px;
@@ -61,6 +64,14 @@ display:flex;
   margin-left:10vw;
   padding-top:12px;
   margin-top:0px;
+}
+
+#footer{
+  height:35px;
+  width:100%;
+  background-color:rgb(26, 25, 25);
+  position:fixed;
+  bottom:0px;
 }
 
 
@@ -117,9 +128,7 @@ th{
   justify-content: flex-start;
   
 }
-.cardPic{
 
-}
 .cardName,.cardInfo, .cardBuy {
   text-align: center;
 }
