@@ -63,10 +63,19 @@ $( document ).ready(function() {
             userLogin += '<button id = "submit">Ok</button></div>';
             $("#content").append(userLogin);
             
-            $("#content").append("<div id = 'prodCardWrapper'></div");
+            $("#content").append("<div class = 'prodCardWrapper'></div");
             $("#content").append("<h1 id = 'cartH1'>Varukorgen</h1><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
 
             }
+
+            
+            sendToCart = JSON.parse(sessionStorage.getItem("cart"));
+            for (i = 0; i < sendToCart.length; i++) { 
+                
+                $(".prodCardWrapper").append(sendToCart);
+                console.log(sendToCart)
+            } 
+
             $("#member").click(function() {
                 $("#content").empty();
                
@@ -174,7 +183,7 @@ $( document ).ready(function() {
                         appendCard += '<div class = "cardInfo"><p>'+ produkter[j].prodDesc +'</p></div>';
                         appendCard += '<div class = "cardBuy">';
                         appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
-                        appendCard += '<a href = "#">Köp</a></h3></div></div>';
+                        appendCard += '<a class = "buyProd" href = "#">Köp</a></h3></div></div>';
                         
                         $(".prodCardWrapper").append(appendCard);
                     }   
@@ -182,7 +191,18 @@ $( document ).ready(function() {
                    
                 }
                 }; 
+                $(".buyProd").on("click",function(event) {
+ 
+                    var sendToCart = $(event.currentTarget).parent().parent().parent().html();
+                    var cartArray = [];
+                    cartArray.push(sendToCart);
+                    sessionStorage.setItem("cart", JSON.stringify(cartArray));
+   
+                });
             }); 
+
+           
+
         }; 
         
 
