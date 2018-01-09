@@ -75,13 +75,14 @@ $( document ).ready(function() {
             //Skicka med från köp till kundvagn
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
             for (i = 0; i < sendToCart.length; i++) { 
-                
-                $(".prodCardWrapper").append('<div class = "cards">'+sendToCart+'</div>');
-                $(".buy").remove();
                
+                $(".prodCardWrapper").append("<div class = 'cards'>" + sendToCart[i] + "</div>");
+                $(".buy").remove();
+                console.log("<div class = 'cards'>" + sendToCart + "</div>");   
             } 
                 
             if  (sessionStorage.getItem("cart") === null) {
+                $("#content").append("<h1>Du har inget i kundvagnen</h1>")
                 console.log("Du har inget i kundvagnen")
             }else{
                var myInteger = parseInt($("h3").text());
@@ -220,14 +221,15 @@ $( document ).ready(function() {
                         appendCard += '</h3></div>';
                         
                         $(".prodCardWrapper").append(appendCard);
+                        
                         $(".showMore").on("click", function() {
-                            var sendToCart = $(event.currentTarget).parent().html();
+                            var showMore = $(event.currentTarget).parent().html();
                             
                             $(".prodCardWrapper").empty();
                             $(".prodCardWrapper").append('<div class = "cards"></div>')
-                            $(".cards").append(sendToCart);
+                            $(".cards").append(showMore);
                             $(".cardInfo").append(produkter[j].prodDesc)  //BÖRJA HÄR!
-                                console.log(sendToCart)
+                                console.log(showMore)
 
                         });
                     }   
@@ -237,22 +239,24 @@ $( document ).ready(function() {
                 }; 
 
                 $(".buyProd").on("click",function(event) {
- 
-                    var sendToCart = $(event.currentTarget).parent().parent().parent().html();
-                    var cartArray = [];
+                    var cartArray;
+                    var sendToCart = $(event.currentTarget).parents(".cards").html();
+                    
+                    if(sessionStorage.getItem("cart") == null){
+                        cartArray = sessionStorage.setItem("cart", JSON.stringify([]));
+                    }else{
+                         cartArray = JSON.parse(sessionStorage.getItem("cart"));
+                    }
+                    
                     cartArray.push(sendToCart);
                     sessionStorage.setItem("cart", JSON.stringify(cartArray));
-                    $("")
+                    
                 });
             }); 
 
              
 
-        }; 
-       
-
-    console.log(sendToCart)
-       
+        };        
  
     });
            

@@ -116,11 +116,18 @@ th{
 /*Produkt kort*/
 
 .cards{
-  max-width:340px;
+  max-width:200px;
   margin-top:5vh;
   margin-left:6vw;
+  margin-bottom:2vh;
   border:solid rgba(0, 0, 0, 0.39) 3px;
   flex-direction: row;
+}
+.cardPic>img{
+  width:100%;
+  width:100%;
+  
+ 
 }
 .prodCardWrapper{
   display:flex;
