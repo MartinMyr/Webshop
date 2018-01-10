@@ -75,10 +75,13 @@ $( document ).ready(function() {
             //Skicka med från köp till kundvagn
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
             for (i = 0; i < sendToCart.length; i++) { 
+              
+                   console.log(sendToCart)
+
                
                 $(".prodCardWrapper").append("<div class = 'cards'>" + sendToCart[i] + "</div>");
                 $(".buy").remove();
-                console.log("<div class = 'cards'>" + sendToCart + "</div>");   
+                 
             } 
                 
             if  (sessionStorage.getItem("cart") === null) {
@@ -213,7 +216,7 @@ $( document ).ready(function() {
                     if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name && produkter[j].huvudKat == underKat[i].huvudkategori){
                         var appendCard = '<div class = "cards">';
                         appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
-                        appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
+                        appendCard += '<div id = "' + produkter[j].id + '" class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
                         appendCard += '<div class = "cardInfo"><p></p></div>';
                         appendCard += '<div class = "cardBuy">';
                         appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
@@ -242,8 +245,9 @@ $( document ).ready(function() {
 
                 $(".buyProd").on("click",function(event) {
                     var cartArray;
-                    var sendToCart = $(event.currentTarget).parents(".cards").html();
-                    
+                    var sendToCart = $(this);
+                    console.log($(this).html())
+                  
                     if(sessionStorage.getItem("cart") == null){
                         cartArray = sessionStorage.setItem("cart", JSON.stringify([]));
                     }else{
