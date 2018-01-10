@@ -217,9 +217,11 @@ $( document ).ready(function() {
                         appendCard += '<div class = "cardInfo"><p></p></div>';
                         appendCard += '<div class = "cardBuy">';
                         appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
-                        appendCard += '<a class = "buyProd" href = "#">Köp</a></h3></div><h3 class = "showMore">Visa mer';
+                        appendCard += '<a id="' + produkter[j].id + '" class = "buyProd" href = "#">Köp</a></h3></div><h3 class = "showMore">Visa mer';
                         appendCard += '</h3></div>';
                         
+
+                        // a id utbytt så den skickar med rätt id . spara denna i lokalstorage och fixa så den skrivs ut ordentligt.
                         $(".prodCardWrapper").append(appendCard);
                         
                         $(".showMore").on("click", function() {
