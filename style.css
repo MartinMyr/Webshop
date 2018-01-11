@@ -132,8 +132,37 @@ th{
 .prodCardWrapper{
   display:flex;
   flex-wrap:wrap;
+  justify-content: flex-start; 
+}
+.moreInfo{
+  max-width:900px;
+  margin:auto;
+}
+.moreInfo > .cardInfo{
+  text-align: left;
+  margin-left:5vw;
+  max-width:350px;
+  border:0;
+}
+
+.moreInfo > .cardName{
+  float:left;
   justify-content: flex-start;
-  
+  margin-top:10vh;
+  width:50%
+}
+.moreInfo > .cardPic{
+  justify-content: flex-end;
+  display:flex;
+  margin-top:10vh;
+  width:50%;
+  float:left;
+}
+
+.moreInfo > .cardPic > img{
+width:500px;
+
+display:flex;
 }
 
 .cardName,.cardInfo, .cardBuy {

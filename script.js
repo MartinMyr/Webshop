@@ -55,8 +55,7 @@ $( document ).ready(function() {
         //Kundvagnen
         $("#toCart").click(function() {
             
-            cartRefresh();
-            function cartRefresh(){
+       
             $("#content").empty();
             $("#backgroundContact").css("background-image","none");
             
@@ -72,7 +71,8 @@ $( document ).ready(function() {
             $("#content").append("<div class = 'prodCardWrapper'></div");
             $("#content").append("<button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
 
-            }
+            
+            
 
             //Skicka med från köp till kundvagn
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
@@ -83,10 +83,7 @@ $( document ).ready(function() {
                         var appendCard = '<div class = "cards">';
                         appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
                         appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
-                        appendCard += '<div class = "cardInfo"><p></p></div>';
-                        appendCard += '<div class = "cardBuy">';
-                        appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
-                        appendCard += '<a id="#" class = "buyProd" href = "#">Köp</a></h3></div><h3 class = "showMore">Visa mer';
+                        appendCard += '<h3>' + produkter[j].prodPrice +'</h3';
                         appendCard += '</h3></div>';
                         $(".prodCardWrapper").append(appendCard);
                     }
@@ -239,16 +236,23 @@ $( document ).ready(function() {
                 $(".showMore").on("click", function() {
                     for (j = 0; j < produkter.length; j++){
                         if (this.id == produkter[j].id){
-                            $(this).parent().children(".cardInfo").html(produkter[j].prodDesc);
-                            $(this).parents(".cards").append("<h3 class = 'showLess'>Visa mindre</h3>");
-                            $(this).parent().children(".showMore").hide();
+                            $("#content").empty();
+                            var showMoreInfo = '<div class = "moreInfo">';
+                            showMoreInfo += '<div class = "cardName"><h1>'+produkter[j].prodName+'</h1></div>';
+                            showMoreInfo += '<div class = "cardPic"><img src = "'+ produkter[j].prodImage +'"></div>';
+                            showMoreInfo += '<div class = "cardInfo"><p>' + produkter[j].prodDesc + '</p></div>';
+                            showMoreInfo += '<div class = "cardBuy">';
+                            showMoreInfo += '<h3>'+ produkter[j].prodPrice +'</h3>';
+                            showMoreInfo += '<h3 class = "buy"><a href = "#">Köp</a></h3></div>';
+                    
+                            $("#content").append(showMoreInfo)
                         }
                         
                     }
                     $(".showLess").on("click", function() {
-                        $(this).parent().children(".cardInfo").empty();
-                        $(this).parent().children(".showMore").show();
-                        $(this).parent().children(".showLess").hide();
+                        //$(this).parent().children(".cardInfo").empty();
+                        //$(this).parent().children(".showMore").show();
+                       // $(this).parent().children(".showLess").hide();
 
                     });
                     console.log(this.id)
