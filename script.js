@@ -53,11 +53,12 @@ $( document ).ready(function() {
 
         //Kundvagnen
         $("#toCart").click(function() {
+            
             cartRefresh();
             function cartRefresh(){
             $("#content").empty();
             $("#backgroundContact").css("background-image","none");
-           
+            
             
             var userLogin = '<span id = "totPrice"></span><div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
             userLogin += '<input id = "username" type="text" name="username">';
@@ -74,23 +75,30 @@ $( document ).ready(function() {
 
             //Skicka med från köp till kundvagn
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
+            
             for (i = 0; i < sendToCart.length; i++) { 
-              
-                   console.log(sendToCart)
-
-               
-                $(".prodCardWrapper").append("<div class = 'cards'>" + sendToCart[i] + "</div>");
-                $(".buy").remove();
-                 
+                for (j = 0; j < produkter.length; j++){
+                    if (sendToCart[i] == produkter[j].id){
+                        var appendCard = '<div class = "cards">';
+                        appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
+                        appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
+                        appendCard += '<div class = "cardInfo"><p></p></div>';
+                        appendCard += '<div class = "cardBuy">';
+                        appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
+                        appendCard += '<a id="#" class = "buyProd" href = "#">Köp</a></h3></div><h3 class = "showMore">Visa mer';
+                        appendCard += '</h3></div>';
+                        $(".prodCardWrapper").append(appendCard);
+                    }
+                }
             } 
                 
             if  (sessionStorage.getItem("cart") === null) {
                 $("#content").append("<h1>Du har inget i kundvagnen</h1>")
                 console.log("Du har inget i kundvagnen")
             }else{
-               var myInteger = parseInt($("h3").text());
-               $("#totPrice").append( myInteger + "+ 55kr i frakt. Totalt:" + Number(myInteger + 55)) 
-               console.log(myInteger)
+               //var myInteger = parseInt($("h3").text());
+               ///$("#totPrice").append( myInteger + "+ 55kr i frakt. Totalt:" + Number(myInteger + 55)) 
+               //console.log(myInteger)
             }
 
             $("#member").click(function() {
@@ -185,10 +193,7 @@ $( document ).ready(function() {
                 var headMenu = '<div class="dropdown"><button id = "'+i+'" class="dropbtn">'+ huvudKat[i].menyVal;
                 headMenu += '<div class="dropdown-content' + i + '">';
                 headMenu += '</button></div>';
-                $(".navbar").append(headMenu);
-            
-            
-                
+                $(".navbar").append(headMenu);  
             };
                 
             for (i = 0; i < underKat.length; i++){
@@ -206,6 +211,8 @@ $( document ).ready(function() {
                     $(".dropdown-content3").append(underMeny );
                 }
             };
+
+
            
             $(".dropdown").on("click", "a.underMeny", function() {
                 $(".prodCardWrapper").empty();
@@ -216,43 +223,41 @@ $( document ).ready(function() {
                     if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name && produkter[j].huvudKat == underKat[i].huvudkategori){
                         var appendCard = '<div class = "cards">';
                         appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
-                        appendCard += '<div id = "' + produkter[j].id + '" class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
+                        appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
                         appendCard += '<div class = "cardInfo"><p></p></div>';
                         appendCard += '<div class = "cardBuy">';
                         appendCard += '<h3>' + produkter[j].prodPrice + '</h3><h3 class = "buy">';
-                        appendCard += '<a id="' + produkter[j].id + '" class = "buyProd" href = "#">Köp</a></h3></div><h3 class = "showMore">Visa mer';
+                        appendCard += '<a id="' + produkter[j].id + '" class = "buyProd" href = "#">Köp</a></h3></div><h3 id ="' + produkter[j].id + '" class  = "showMore">Visa mer';
                         appendCard += '</h3></div>';
-                        
-
-                        // a id utbytt så den skickar med rätt id . spara denna i lokalstorage och fixa så den skrivs ut ordentligt.
+                
                         $(".prodCardWrapper").append(appendCard);
-                        
-                        $(".showMore").on("click", function() {
-                            var showMore = $(event.currentTarget).parent().html();
-                            
-                            $(".prodCardWrapper").empty();
-                            $(".prodCardWrapper").append('<div class = "cards"></div>')
-                            $(".cards").append(showMore);
-                            $(".cardInfo").append(produkter[j].prodDesc)  //BÖRJA HÄR!
-                                console.log(showMore)
-
-                        });
-                    }   
-                   
-                   
-                }
+                    };    
+                };
                 }; 
+                //Visa mer i prodCard samt append show less
+                $(".showMore").on("click", function() {
+                    for (j = 0; j < produkter.length; j++){
+                        if (this.id == produkter[j].id){
+                            $(this).parent().children(".cardInfo").html(produkter[j].prodDesc);
+                            
+                        }
+                        
+                    }
+                  
+                    console.log(this.id)
+                });
+
 
                 $(".buyProd").on("click",function(event) {
                     var cartArray;
-                    var sendToCart = $(this);
-                    console.log($(this).html())
-                  
+                    var sendToCart = this.id;
+                 
+                    
                     if(sessionStorage.getItem("cart") == null){
                         cartArray = sessionStorage.setItem("cart", JSON.stringify([]));
-                    }else{
-                         cartArray = JSON.parse(sessionStorage.getItem("cart"));
                     }
+                    
+                    cartArray = JSON.parse(sessionStorage.getItem("cart"));
                     
                     cartArray.push(sendToCart);
                     sessionStorage.setItem("cart", JSON.stringify(cartArray));
