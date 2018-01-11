@@ -45,6 +45,7 @@ $( document ).ready(function() {
  
         //Startup functions
         meny();
+        
        
 
 
@@ -239,14 +240,20 @@ $( document ).ready(function() {
                     for (j = 0; j < produkter.length; j++){
                         if (this.id == produkter[j].id){
                             $(this).parent().children(".cardInfo").html(produkter[j].prodDesc);
-                            
+                            $(this).parents(".cards").append("<h3 class = 'showLess'>Visa mindre</h3>");
+                            $(this).parent().children(".showMore").hide();
                         }
                         
                     }
-                  
+                    $(".showLess").on("click", function() {
+                        $(this).parent().children(".cardInfo").empty();
+                        $(this).parent().children(".showMore").show();
+                        $(this).parent().children(".showLess").hide();
+
+                    });
                     console.log(this.id)
                 });
-
+               
 
                 $(".buyProd").on("click",function(event) {
                     var cartArray;
