@@ -178,6 +178,403 @@
         "huvudKat": 2,
         "underKat": 1,
         "prodImage":"/prodPics/MA750.jpg"
+    },
+    {
+        "id": 21,
+        "prodName": "AH-D7200 HÖRLUR",
+        "prodDesc": "AH-D7200 är Denons flaggskepp – kompromisslösa High End-hörlurar med finish, teknik och ljudkvalitet på enastående nivå. Äkta valnöt, äkta aluminium, ultramjukt skinn och ultraren koppar hjälper till att ge dig en oförglömlig upplevelse.",
+        "prodPrice": 7498,
+        "huvudKat": 2,
+        "underKat": 2,
+        "prodImage":"/prodPics/AH-D7200.jpg"
+    },
+    {
+        "id": 22,
+        "prodName": "NIGHTHAWK CARBON HÖRLUR",
+        "prodDesc": "NightHawk Carbon är ett par helt unika over-ear-hörlurar med ljud, komfort och design i absoluta lyxklassen. Ta på dem, upplev dem och var beredd på att glömma tid och rum. Här blir din musiklyssning en enastående upplevelse precis varje gång!",
+        "prodPrice": 5998,
+        "huvudKat": 2,
+        "underKat": 2,
+        "prodImage":"/prodPics/NIGHTHAWK.jpg"
+    },
+    {
+        "id": 23,
+        "prodName": "MDR-ZX660AP HÖRLUR",
+        "prodDesc": "Sony MDR-ZX660 är ett par on-ear-hörlurar med imponerande ljudkvalitet till ett ytterst överkomligt pris. Huvudbygeln kan justeras för optimal lyssningskomfort, och du kan kontrollera din smartphone direkt från den ”trasselfria” kabeln.",
+        "prodPrice": 499,
+        "huvudKat": 2,
+        "underKat": 2,
+        "prodImage":"/prodPics/MDR-ZX660AP.jpg"
+    },
+    {
+        "id": 24,
+        "prodName": "P9 SIGNATURE HÖRLUR",
+        "prodDesc": "P9 Signature markerar att B&W firar 50 år i musikens och ljudets tjänst. Här har de gått all in för att skapa ett par helt unika hörlurar som kommer att vara en milstolpe både i dag och under flera decennier framöver. Kompromisslösa i alla detaljer!",
+        "prodPrice": 8698,
+        "huvudKat": 2,
+        "underKat": 2,
+        "prodImage":"/prodPics/P9.jpg"
+    },
+    {
+        "id": 25,
+        "prodName": "ELITE SPORT TRÅDLÖS IN-EAR HÖRLUR",
+        "prodDesc": "Elite Sport 4.5H är ett par helt kabelfria in-ear-hörlurar med unika funktioner för sport. Med brusreducerande samtalsteknik och röstbaserad coachfunktion som ger dig instruktioner och råd får du en avancerad personlig tränare. Damm- och vattentäta.",
+        "prodPrice": 1990,
+        "huvudKat": 2,
+        "underKat": 3,
+        "prodImage":"/prodPics/Elite.jpg"
+    },
+    {
+        "id": 26,
+        "prodName": "SPORT PACE TRÅDLÖS IN-EAR HÖRLUR",
+        "prodDesc": "Sport Pace är ett par trådlösa in-ear-hörlurar med röstbaserad coachfunktion som ger dig råd kring ditt löptempo så att du kan optimera din träning. Ergonomisk utformning ser till att hörlurarna sitter bra under hela rundan. Står emot svett och fukt.",
+        "prodPrice": 748,
+        "huvudKat": 2,
+        "underKat": 3,
+        "prodImage":"/prodPics/SPORTPACE.jpg"
+    },
+    {
+        "id": 27,
+        "prodName": "SPORT COACH TRÅDLÖS IN-EAR HÖRLUR",
+        "prodDesc": "Sport Coach är ett par trådlösa in-ear-hörlurar med unika funktioner för fitness och CrossFit inomhus. Den inbyggda röstbaserade coachfunktionen guidar dig genom övningar och räknar repetitioner så att du kan lägga all din energi på att träna.",
+        "prodPrice": 798,
+        "huvudKat": 2,
+        "underKat": 3,
+        "prodImage":"/prodPics/SPORTCOACH.jpg"
+    },
+    {
+        "id": 28,
+        "prodName": "SPORT PULSE TRÅDLÖS IN-EAR HÖRLUR",
+        "prodDesc": "Sport Pulse är ett par trådlösa in-ear-hörlurar med unika sportfunktioner och bra ljud. Den har exakt pulsmätning, räknar automatiskt din VO2 Max och ger dig ögonblickligen feedback och råd så att du får ut så mycket som möjligt av din träning.",
+        "prodPrice": 1790,
+        "huvudKat": 2,
+        "underKat": 3,
+        "prodImage":"/prodPics/SPORTPULSE.jpg"
+    },
+    {
+        "id": 29,
+        "prodName": "SPORT PRO SMARTCORE ADAPTRAR AV SKUM",
+        "prodDesc": "Sport Pro SmartCore ger dig bättre ljud och komfort med dina in-ear-hörlurar medan du tränar. De sitter säkert i öronen även under intensiva träningspass och släpper igenom en smula bakgrundsljud så att du kan höra trafiken under löprundan.",
+        "prodPrice": 228,
+        "huvudKat": 2,
+        "underKat": 4,
+        "prodImage":"/prodPics/SKUMSMARTCORE.jpg"
+    },
+    {
+        "id": 30,
+        "prodName": "PERCH BORDSSTATIV",
+        "prodDesc": "Perch är ett elegant stativ som ger dig en enkel och säker förvaringsplats för dina hörlurar. Solitt och exklusivt utfört i zink, stål och proteinläder. Kan användas till hörlurar från alla tillverkare.",
+        "prodPrice": 798,
+        "huvudKat": 2,
+        "underKat": 4,
+        "prodImage":"/prodPics/PERCH.jpg"
+    },
+    {
+        "id": 31,
+        "prodName": "DRAGONFLY BLACK D/A-OMVANDLARE",
+        "prodDesc": "DragonFly Black är en ultrakompakt, mobil USB-D/A-omvandlare som för en liten slant ger dig kristallklart digitalt hifi-ljud från både din smartphone och din bärbara dator. Koppla in dina hörlurar – du tror knappt dina öron när du hör ljudet!",
+        "prodPrice": 948,
+        "huvudKat": 2,
+        "underKat": 4,
+        "prodImage":"/prodPics/DRAGONFLYBLACK.jpg"
+    },
+    {
+        "id": 32,
+        "prodName": "DRAGONFLY RED D/A-OMVANDLARE",
+        "prodDesc": "DragonFly Red är en ultrakompakt, mobil D/A-omvandlare som via USB ger dig kristallklart digitalt hifi-ljud från både din smartphone och din bärbara dator. Koppla in dina hörlurar – du tror knappt dina öron när du hör ljudet!",
+        "prodPrice": 1898,
+        "huvudKat": 2,
+        "underKat": 4,
+        "prodImage":"/prodPics/DRAGONFLYRED.jpg"
+    },
+    {
+        "id": 33,
+        "prodName": "SXC7801 NÄTVERKS-KABEL",
+        "prodDesc": "Sinox SXC7801 är en kategori 6-nätverkskabel för Ethernet-baserade hemnätverk. Lämplig för exempelvis överföring av mediefiler mellan en nätverkshårddisk (NAS) eller dator och en Blu-ray-spelare eller hemmabioförstärkare. Finns i flera längder.",
+        "prodPrice": 78,
+        "huvudKat": 3,
+        "underKat": 1,
+        "prodImage":"/prodPics/SXC7801.jpg"
+    },
+    {
+        "id": 34,
+        "prodName": "WHITE EDITION OPTISK KABEL",
+        "prodDesc": "White Edition Optical är en vit, ekonomisk optisk kabel. Med beskedlig bredd och korta kontakter är den idealisk till ställen där det är ont om plats eller där du behöver en kabel som är så diskret som möjligt. Finns i längder från 1 till 10 meter.",
+        "prodPrice": 98,
+        "huvudKat": 3,
+        "underKat": 1,
+        "prodImage":"/prodPics/OPTISKKABEL.jpg"
+    },
+    {
+        "id": 35,
+        "prodName": "SXI4950 OTG ADAPTER USB KABEL",
+        "prodDesc": "SXI4950 OTG är en on-the-go-adapterkabel med Micro-USB till USB-A-hona som du kan använda till att koppla din Android-baserade smartphone/surfplatta till de mobila USB-D/A-omvandlarna DragonFly Red/Black från AudioQuest. Längd 20 cm.",
+        "prodPrice": 98,
+        "huvudKat": 3,
+        "underKat": 1,
+        "prodImage":"/prodPics/SXI4950.jpg"
+    },
+    {
+        "id": 36,
+        "prodName": "SXC4102 USB KABEL",
+        "prodDesc": "Sinox SXC4102 är en USB-kabel i bra kvalitet, avsedd att koppla samman USB-enheter med dator- eller hemmabioutrustning som exempelvis en receiver, förstärkare eller Blu-ray-spelare. Guldpläterade formgjutna kontakter. Finns i flera längder.",
+        "prodPrice": 98,
+        "huvudKat": 3,
+        "underKat": 1,
+        "prodImage":"/prodPics/SXC4102.jpg"
+    },
+    {
+        "id": 37,
+        "prodName": "RED EDITION HDMI2 HDMI-KABEL",
+        "prodDesc": "Red Edition HDMI2 är en seriös och solid HDMI-kabel till ett förnuftigt pris. Du får bl.a. ledare i 99,99 % ren koppar, tredubbel skärmning och solida gjutna kontakter. Ett riktigt bra val till utrustning i budgetklassen. Finns från 1 till 10 meter.",
+        "prodPrice": 218,
+        "huvudKat": 3,
+        "underKat": 2,
+        "prodImage":"/prodPics/HDMI2RED.jpg"
+    },
+    {
+        "id": 38,
+        "prodName": "FOREST HDMI-KABEL",
+        "prodDesc": "Forest är en prisvärd HDMI-kabel som för en vettig peng ger dig en kabel som är mycket läckrare än billiga no-name-alternativ. Ledarna är silverpläterade och du får snygg design och kvalitet i alla detaljer. Finns från 0,6 till 10 meter.",
+        "prodPrice": 358,
+        "huvudKat": 3,
+        "underKat": 2,
+        "prodImage":"/prodPics/FORESTHDMI.jpg"
+    },
+    {
+        "id": 39,
+        "prodName": "WHITE EDITION HDMI1 HDMI-KABEL",
+        "prodDesc": "White Edition HDMI1 är en ekonomisk och tunn, vit HDMI-kabel. Du får ledare i 99,99 % ren syrefri koppar, tredubbel skärmning och superkorta kontakter som gör kabeln idealisk till ställen med ont om plats. Finns i längder från 1 till 5 meter.",
+        "prodPrice": 398,
+        "huvudKat": 3,
+        "underKat": 2,
+        "prodImage":"/prodPics/HDMI1WHITE.jpg"
+    },
+    {
+        "id": 40,
+        "prodName": "BLUE EDITION HDMI1 HDMI-KABEL",
+        "prodDesc": "Blue Edition HDMI1 är en högkvalitativ HDMI-kabel i platt design och med inbyggd HDMI-repeater i 5 meters-versionen. Här får du High Speed-överföring när du behöver det som allra mest. Finns i flera längder.",
+        "prodPrice": 398,
+        "huvudKat": 3,
+        "underKat": 2,
+        "prodImage":"/prodPics/HDMI1BLUE.jpg"
+    },
+    {
+        "id": 41,
+        "prodName": "SLIP 14/4 HÖGTALAR-KABEL",
+        "prodDesc": "SLiP 14/4 är en slät och flexibel högtalarkabel som passar ytterst bra till installationer, samtidigt som den har fina ljudmässiga kvaliteter. Fyra ledare gör att du kan kombinera den för många olika behov. Säljs i löpmeter.",
+        "prodPrice": 78,
+        "huvudKat": 3,
+        "underKat": 3,
+        "prodImage":"/prodPics/SLIP144.jpg"
+    },
+    {
+        "id": 42,
+        "prodName": "Q2 HÖGTALAR-KABEL",
+        "prodDesc": "Q2 är en avancerad högtalarkabel som med sin kompakta och flexibla fyrkantiga utformning också är enkel att dra genom rör eller placera diskret längs golvlisten. Ledarna utgörs av ultraren LGC-koppar, säljs i löpmeter.",
+        "prodPrice": 85,
+        "huvudKat": 3,
+        "underKat": 3,
+        "prodImage":"/prodPics/Q2.jpg"
+    },
+    {
+        "id": 43,
+        "prodName": "ROCKET 33 SPOOL HÖGTALAR-KABEL",
+        "prodDesc": "Rocket 33 spool är en avancerad och audiofil högtalarkabel som med sin relativt kompakta och flexibla utformning är en snygg lösning för ambitiösa installationer. Massiva ledare i ultraren LGC/PSC-koppar, säljs i löpmeter.",
+        "prodPrice": 248,
+        "huvudKat": 3,
+        "underKat": 3,
+        "prodImage":"/prodPics/ROCKET33.jpg"
+    },
+    {
+        "id": 44,
+        "prodName": "ROCKET 44 SPOOL HÖGTALAR-KABEL",
+        "prodDesc": "Rocket 44 spool är en avancerad och audiofil högtalarkabel som med sin relativt kompakta och flexibla utformning är en snygg lösning för ambitiösa installationer. Massiva ledare i ultraren PSC/PSC+-koppar, säljs i löpmeter.",
+        "prodPrice": 458,
+        "huvudKat": 3,
+        "underKat": 3,
+        "prodImage":"/prodPics/ROCKET44.jpg"
+    },
+    {
+        "id": 45,
+        "prodName": "CTP1010 STRÖM-KABEL",
+        "prodDesc": "Connectech CTP1010 är en ekonomisk strömkabel som du kan använda för att ersätta den kabel som medföljer t.ex. CD-spelare med lös nätkabel. Liten kontakt för anslutning till enheten.",
+        "prodPrice": 50,
+        "huvudKat": 3,
+        "underKat": 4,
+        "prodImage":"/prodPics/CTP1010.jpg"
+    },
+    {
+        "id": 46,
+        "prodName": "HEOS EXTENSION CABLE STRÖM-KABEL",
+        "prodDesc": "SoundXtra strömkabel till din HEOS 1/3/5/7 gör placeringen lättare. Kabeln är gjord av företaget som utvecklat väggfästen för HEOS, så att de fungerar bra tillsammans. Svart eller vit.",
+        "prodPrice": 128,
+        "huvudKat": 3,
+        "underKat": 4,
+        "prodImage":"/prodPics/SOUNDXTRA.jpg"
+    },
+    {
+        "id": 47,
+        "prodName": "PLAY:1 EXTENSION CABLE STRÖM-KABEL",
+        "prodDesc": "Flexson-strömkabeln till Sonos PLAY:1 förlänger bokstavligt talat din Sonos-upplevelse med 1 eller 3 meter. Kabeln kommer från samma tillverkare som golvstativet till PLAY:1, så de här två fungerar förträffligt tillsammans. Finns i både svart och vitt",
+        "prodPrice": 128,
+        "huvudKat": 3,
+        "underKat": 4,
+        "prodImage":"/prodPics/PLAY1.jpg"
+    },
+    {
+        "id": 48,
+        "prodName": "301691 STRÖM-KABEL",
+        "prodDesc": "Strömkabel i vitt utförande som ersätter kabeln som ingår till apparater med utbytbar strömkabel. Liten apparatkontakt, finns i flera längder.",
+        "prodPrice": 198,
+        "huvudKat": 3,
+        "underKat": 4,
+        "prodImage":"/prodPics/301691.jpg"
+    },
+    {
+        "id": 49,
+        "prodName": "CXUHD BLU-RAY-SPELARE",
+        "prodDesc": "CXUHD är en avancerad och otroligt läckert designad 4K/UHD Blu-ray-spelare som klarar nästan alla tänkbara skivor och filformat och stödjer både HDR och Dolby Vision. Här kan du njuta av dagens bästa ljud och bild i din hemmabio.",
+        "prodPrice": 8490,
+        "huvudKat": 4,
+        "underKat": 1,
+        "prodImage":"/prodPics/CXUHD.jpg"
+    },
+    {
+        "id": 50,
+        "prodName": "DBT-3313UD BLU-RAY-SPELARE",
+        "prodDesc": "DBT-3313UD är en tung och kompromisslös Blu-ray-spelare i den absoluta toppklassen som kan spela alla mediefiler i ditt hem, samt visa film från video-on-demand-tjänsten Netflix. Jitterfri ljudöverföring med Denon Link HD.",
+        "prodPrice": 7398,
+        "huvudKat": 4,
+        "underKat": 1,
+        "prodImage":"/prodPics/DBT-3313UD.jpg"
+    },
+    {
+        "id": 51,
+        "prodName": "UBD-M9500 BLU-RAY-SPELARE",
+        "prodDesc": "UBD-M9500 är en avancerad 4K Ultra HD Blu-ray-spelare som ger din UHD-TV alla möjligheter att leva upp till sin potential. Du får inbyggd wifi, Bluetooth och Smart Hub med Netflix, YouTube m.m. – elegant förpackat i Samsungs snygga Curved Design.",
+        "prodPrice": 3790,
+        "huvudKat": 4,
+        "underKat": 1,
+        "prodImage":"/prodPics/UBD-M9500.jpg"
+    },
+    {
+        "id": 52,
+        "prodName": "BDP-S3700B BLU-RAY-SPELARE",
+        "prodDesc": "BDP-S3700 är en elegant, ytterst kompakt och prisvärd Blu-ray-spelare som ger dig härliga högupplösta filmupplevelser, trådlös nätverksfunktion (wi-fi) , styrning via app och tillgång till en mängd olika TV-optimerade appar, inkl. Netflix.",
+        "prodPrice": 1298,
+        "huvudKat": 4,
+        "underKat": 1,
+        "prodImage":"/prodPics/BDP-S3700B.jpg"
+    },
+    {
+        "id": 53,
+        "prodName": "AVR-X540BT HEMMABIO-RECEIVER",
+        "prodDesc": "AVR-X540BT ger dig äkta högupplöst hemmabio utan att det kostar mer eller tar mer plats än högst nödvändigt. Du får 70 hifi-watt, Bluetooth med fjärrstyrning via app, de senaste HDMI-standarderna och många fler fina finesser. Endast 32 cm djup.",
+        "prodPrice": 3598,
+        "huvudKat": 4,
+        "underKat": 2,
+        "prodImage":"/prodPics/AVR-X540BT.jpg"
+    },
+    {
+        "id": 54,
+        "prodName": "AVR HEMMABIO-RECEIVER",
+        "prodDesc": "HEOS AVR är för dig som älskar hemmabio och musik, men hatar stora apparater, överflödiga knappar och långa kablar över vardagsrummet. I en enda apparat får du äkta 5-kanals surround och en toppmodern trådlös streamingstereoanläggning med multiroom.",
+        "prodPrice": 8398,
+        "huvudKat": 4,
+        "underKat": 2,
+        "prodImage":"/prodPics/AVR.jpg"
+    },
+    {
+        "id": 55,
+        "prodName": "AVR-X7200WA HEMMABIO-RECEIVER",
+        "prodDesc": "AVR-X7200WA är ett flaggskepp med 9.2 kanaler, 150 audiofila och strömstarka watt, effektdelar i L/R-separerade monoblock, 32-bitars uppsampling/signalbehandling, 11.2-kanalsprocessor, Dolby Atmos och alla funktioner. Den ultimata hemmabioreceivern!",
+        "prodPrice": 27398,
+        "huvudKat": 4,
+        "underKat": 2,
+        "prodImage":"/prodPics/AVR-X7200WA.jpg"
+    },
+    {
+        "id": 56,
+        "prodName": "M27 HEMMABIO EFFEKT-FÖRSTÄRKARE",
+        "prodDesc": "M27 är en 7-kanalig analog klass D-effektförstärkare för hemmabiografer i High End-klassen, med 180 watt, suveränt ljud och nästan outtömlig råstyrka, även med väldigt krävande högtalare. Den exklusiva aluminiumdesignen håller också ren världsklass.",
+        "prodPrice": 39998,
+        "huvudKat": 4,
+        "underKat": 2,
+        "prodImage":"/prodPics/M27.jpg"
+    },
+    {
+        "id": 57,
+        "prodName": "HD27 PROJEKTOR",
+        "prodDesc": "HD27 är en Full-HD-DLP-projektor som ger dig allt som behövs för högkvalitativ hemmabio till ett pris som gör dig tårögd. Om du inte behöver alla anslutningar och funktioner hos de större modellerna är det här ett steg i rätt riktning. Vit finish.",
+        "prodPrice": 6490,
+        "huvudKat": 4,
+        "underKat": 3,
+        "prodImage":"/prodPics/HD27.jpg"
+    },
+    {
+        "id": 58,
+        "prodName": "HD39 PROJEKTOR",
+        "prodDesc": "HD39 är en avancerad Full-HD DLP-projektor som markerar starten för den riktigt seriösa hemmabioklassen – men fortfarande till ett överkomligt pris. Avancerad DarbeeVision-bildbehandling tar kvaliteten till toppklass. Finns i vitt.",
+        "prodPrice": 39998,
+        "huvudKat": 4,
+        "underKat": 3,
+        "prodImage":"/prodPics/HD39.jpg"
+    },
+    {
+        "id": 59,
+        "prodName": "EH-TW6700 PROJEKTOR",
+        "prodDesc": "EH-TW6700 är en avancerad LCD-projektor med hög ljusstyrka och en ytterst flexibel Lens Shift-funktion som gör det enkelt att få optimal montering i alla rum. Inte minst eftersom den även kan skapa stor bild på kort avstånd.",
+        "prodPrice": 12490,
+        "huvudKat": 4,
+        "underKat": 3,
+        "prodImage":"/prodPics/EH-TW6700.jpg"
+    },
+    {
+        "id": 60,
+        "prodName": "GT5500 PLUS PROJEKTOR",
+        "prodDesc": "GT5500 Plus är projektorn för dig som vill ha väldigt stor bild utan att behöva göra om vardagsrummet till en hemmabio med kablar och installationer. Ställ den mot en vit vägg tillsammans med t.ex. en spelkonsol eller en TV-box – sen är det bara att köra!",
+        "prodPrice": 19790,
+        "huvudKat": 4,
+        "underKat": 3,
+        "prodImage":"/prodPics/GT5500.jpg"
+    },
+    {
+        "id": 61,
+        "prodName": "UE32M5605 LED-TV",
+        "prodDesc": "32-tums Full-HD-LED-TV som ger dig allt du behöver för en bra TV-upplevelse, utan att det kostar mer än högst nödvändigt. Du får inbyggd wifi, paus-/inspelningsfunktion via USB och gedigen märkeskvalitet hela vägen.",
+        "prodPrice": 4290,
+        "huvudKat": 4,
+        "underKat": 4,
+        "prodImage":"/prodPics/UE32M5605.jpg"
+    },
+    {
+        "id": 62,
+        "prodName": "KDL-32WD753 LED-TV",
+        "prodDesc": "32-tums Full-HD-LED-TV med allt som behövs till ett ytterst vettigt pris. Du får inspelning via USB och inbyggd trådlös nätverksfunktion (wifi) så att du slipper dra fler kablar än nödvändigt. Perfekt till barnrum, kök m.m.",
+        "prodPrice": 4390,
+        "huvudKat": 4,
+        "underKat": 4,
+        "prodImage":"/prodPics/KDL-32WD753.jpg"
+    },
+    {
+        "id": 63,
+        "prodName": "UE43MU6175 UHD-TV",
+        "prodDesc": "43-tums UHD/4K-TV som är redo att leverera imponerande ultra-högupplösta bildupplevelser inkl. HDR (High Dynamic Range) och UHD-uppskalning. Här får du massor av smarta och avancerade finesser till ett vettigt pris. Paus/inspelning via USB.",
+        "prodPrice": 5490,
+        "huvudKat": 4,
+        "underKat": 4,
+        "prodImage":"/prodPics/UE43MU6175.jpg"
+    },
+    {
+        "id": 64,
+        "prodName": "UE43M5515 LED-TV",
+        "prodDesc": "43-tums Full-HD-LED-TV i vit design som ger dig allt du behöver för en bra TV-upplevelse, utan att det kostar mer än högst nödvändigt. Du får inbyggd wifi, paus-/inspelningsfunktion via USB och gedigen märkeskvalitet hela vägen.",
+        "prodPrice": 5990,
+        "huvudKat": 4,
+        "underKat": 4,
+        "prodImage":"/prodPics/UE43M5515.jpg"
     }
+
    
 ]
