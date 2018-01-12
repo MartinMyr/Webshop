@@ -200,8 +200,8 @@ $( document ).ready(function() {
 
             for (i = 0; i < huvudKat.length; i++) { 
                 var valueHKatt = i +1;
-                var headMenu = '<div class="dropdown"><button id = "'+i+'" class="dropbtn">'+ huvudKat[i].menyVal;
-                headMenu += '<div class= "dropdownC dropdown-content' + i + '">';
+                var headMenu = '<div id = "'+valueHKatt+'" class="dropdown "><button id = "'+i+'" class="dropbtn">'+ huvudKat[i].menyVal;
+                headMenu += '<div class= " dropdown-content' + i + '">';
                 headMenu += '</button></div>';
                 $(".navbar").append(headMenu);  
             };
@@ -223,28 +223,31 @@ $( document ).ready(function() {
                 }
             };
             //Få ut alla relaterade produkter till huvudkategorin
-            /*$(".dropbtn").on("click",function(){
+            $(".dropdown").on("click",function(){
+                
+
                 $(".prodCardWrapper").empty();
                 for (i = 0; i < huvudKat.length; i++){
-                    for (j = 1; j < produkter.length; j++){
-                    
-                    if(this.id == huvudKat[i].id && this.id == produkter[j].huvudKat){
-                        appendCard()
-                         
+                    for (j = 0; j < produkter.length; j++){
+                        console.log(this.id)
+                        if(this.id == huvudKat[i].id && this.id == produkter[j].huvudKat){
+                            appendCard()
+                            
                         };
                     };
-                };    
-            });*/
-
+                };   
+            });
+            
+            
            
-            $(".dropdownC").on("click", "a.underMeny", function() {
+            $(".underMeny").on("click",  function(event) {
+                event.stopPropagation();
                 $("#content").empty();
                 $("#content").append("<div class = 'prodCardWrapper'></div>");
                 $("#backgroundContact").css("background-image","none");
-
                 for (i = 0; i < underKat.length; i++){
                 for (j = 0; j < produkter.length; j++){
-                    
+                    console.log($(this).text())
                     if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name && produkter[j].huvudKat == underKat[i].huvudkategori){
                         appendCard();
                     };    
