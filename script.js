@@ -187,6 +187,19 @@ $( document ).ready(function() {
 
 
             for (i = 0; i < huvudKat.length; i++) { 
+                for (j = 0; j < produkter.length; j++){
+
+                
+                    $(".dropbtn").on("click",function(){
+                        console.log(this.id)
+                       if(this.id  == huvudKat[i].id && this.id == produkter[j].huvudKat){
+                        
+                        }
+
+
+                    });
+                };
+            
             
 
                 var headMenu = '<div class="dropdown"><button id = "'+i+'" class="dropbtn">'+ huvudKat[i].menyVal;
@@ -194,12 +207,13 @@ $( document ).ready(function() {
                 headMenu += '</button></div>';
                 $(".navbar").append(headMenu);  
             };
-                
+             
             for (i = 0; i < underKat.length; i++){
                 var underMenu;
                 underMeny = '<a id =' + i +' href="#" class="underMeny">';
                 underMeny += underKat[i].name + "</a>";      
-            
+        
+
                 if(underKat[i].huvudkategori === 1){
                     $(".dropdown-content0").append(underMeny );
                 }else if(underKat[i].huvudkategori === 2){
@@ -237,7 +251,7 @@ $( document ).ready(function() {
                 };
                 }; 
 
-                
+                    
                 //Visa mer
                 $(".showMore").on("click", function() {
                     for (j = 0; j < produkter.length; j++){
