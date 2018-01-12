@@ -41,7 +41,7 @@ $( document ).ready(function() {
         kundLista = postsCollection3;
 
         
-        
+
  
         //Startup functions
         meny();
@@ -214,7 +214,9 @@ $( document ).ready(function() {
 
            
             $(".dropdown").on("click", "a.underMeny", function() {
-                $(".prodCardWrapper").empty();
+                $("#content").empty();
+                $("#content").append("<div class = 'prodCardWrapper'></div>");
+                $("#backgroundContact").css("background-image","none");
 
                 for (i = 0; i < underKat.length; i++){
                 for (j = 0; j < produkter.length; j++){
@@ -234,6 +236,8 @@ $( document ).ready(function() {
                     };    
                 };
                 }; 
+
+                
                 //Visa mer
                 $(".showMore").on("click", function() {
                     for (j = 0; j < produkter.length; j++){
