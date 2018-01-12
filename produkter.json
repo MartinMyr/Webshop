@@ -6,7 +6,7 @@
         "prodPrice": 1998,
         "huvudKat": 1,
         "underKat": 1,
-        "prodImage":"/prodPics/bas8.jpg"
+        "prodImage":"./prodPics/bas8.jpg"
     },
     {
         "id": 2,

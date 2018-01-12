@@ -46,7 +46,19 @@ $( document ).ready(function() {
         //Startup functions
         meny();
         
-       
+       //Functions
+        function appendCard(){
+            var appendCard = '<div class = "cards">';
+                appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
+                appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
+                appendCard += '<div class = "cardInfo"><p></p></div>';
+                appendCard += '<div class = "cardBuy">';
+                appendCard += '<h3>' + produkter[j].prodPrice + ' kr</h3><h3 class = "buy">';
+                appendCard += '<a id="' + produkter[j].id + '" class = "buyProd" href = "#">Köp</a></h3></div><h3 id ="' + produkter[j].id + '" class  = "showMore">Visa mer';
+                appendCard += '</h3></div>';
+                
+            $(".prodCardWrapper").append(appendCard);
+        }
 
 
 
@@ -187,23 +199,9 @@ $( document ).ready(function() {
 
 
             for (i = 0; i < huvudKat.length; i++) { 
-                for (j = 0; j < produkter.length; j++){
-
-                
-                    $(".dropbtn").on("click",function(){
-                        console.log(this.id)
-                       if(this.id  == huvudKat[i].id && this.id == produkter[j].huvudKat){
-                        
-                        }
-
-
-                    });
-                };
-            
-            
-
+                var valueHKatt = i +1;
                 var headMenu = '<div class="dropdown"><button id = "'+i+'" class="dropbtn">'+ huvudKat[i].menyVal;
-                headMenu += '<div class="dropdown-content' + i + '">';
+                headMenu += '<div class= "dropdownC dropdown-content' + i + '">';
                 headMenu += '</button></div>';
                 $(".navbar").append(headMenu);  
             };
@@ -224,10 +222,22 @@ $( document ).ready(function() {
                     $(".dropdown-content3").append(underMeny );
                 }
             };
-
+            //Få ut alla relaterade produkter till huvudkategorin
+            /*$(".dropbtn").on("click",function(){
+                $(".prodCardWrapper").empty();
+                for (i = 0; i < huvudKat.length; i++){
+                    for (j = 1; j < produkter.length; j++){
+                    
+                    if(this.id == huvudKat[i].id && this.id == produkter[j].huvudKat){
+                        appendCard()
+                         
+                        };
+                    };
+                };    
+            });*/
 
            
-            $(".dropdown").on("click", "a.underMeny", function() {
+            $(".dropdownC").on("click", "a.underMeny", function() {
                 $("#content").empty();
                 $("#content").append("<div class = 'prodCardWrapper'></div>");
                 $("#backgroundContact").css("background-image","none");
@@ -236,17 +246,7 @@ $( document ).ready(function() {
                 for (j = 0; j < produkter.length; j++){
                     
                     if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name && produkter[j].huvudKat == underKat[i].huvudkategori){
-                        var appendCard = '<div class = "cards">';
-                        console.log($(this).text())
-                        appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
-                        appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
-                        appendCard += '<div class = "cardInfo"><p></p></div>';
-                        appendCard += '<div class = "cardBuy">';
-                        appendCard += '<h3>' + produkter[j].prodPrice + ' kr</h3><h3 class = "buy">';
-                        appendCard += '<a id="' + produkter[j].id + '" class = "buyProd" href = "#">Köp</a></h3></div><h3 id ="' + produkter[j].id + '" class  = "showMore">Visa mer';
-                        appendCard += '</h3></div>';
-                
-                        $(".prodCardWrapper").append(appendCard);
+                        appendCard();
                     };    
                 };
                 }; 
@@ -256,7 +256,9 @@ $( document ).ready(function() {
                 $(".showMore").on("click", function() {
                     for (j = 0; j < produkter.length; j++){
                         if (this.id == produkter[j].id){
+                            $("#imgHolder").empty();
                             $("#content").empty();
+                            $("#content").append("<div class = 'prodCardWrapper'></div>");
                             var showMoreInfo = '<div class = "moreInfo">';
                             showMoreInfo += '<div class = "cardName"><h1>'+produkter[j].prodName+'</h1></div>';
                             showMoreInfo += '<div class = "cardPic"><img src = "'+ produkter[j].prodImage +'"></div>';
