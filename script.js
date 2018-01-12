@@ -224,8 +224,9 @@ $( document ).ready(function() {
             };
             //Få ut alla relaterade produkter till huvudkategorin
             $(".dropdown").on("click",function(){
-                
-
+                $("#content").empty();
+                $("#content").append("<div class = 'prodCardWrapper'></div>");
+                $("#backgroundContact").css("background-image","none");
                 $(".prodCardWrapper").empty();
                 for (i = 0; i < huvudKat.length; i++){
                     for (j = 0; j < produkter.length; j++){
