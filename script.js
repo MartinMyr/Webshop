@@ -75,6 +75,7 @@ $( document ).ready(function() {
             
 
             //Skicka med från köp till kundvagn
+            
             sendToCart = JSON.parse(sessionStorage.getItem("cart"));
             
             for (i = 0; i < sendToCart.length; i++) { 
@@ -233,7 +234,7 @@ $( document ).ready(function() {
                     };    
                 };
                 }; 
-                //Visa mer i prodCard samt append show less
+                //Visa mer
                 $(".showMore").on("click", function() {
                     for (j = 0; j < produkter.length; j++){
                         if (this.id == produkter[j].id){
@@ -244,12 +245,26 @@ $( document ).ready(function() {
                             showMoreInfo += '<div class = "cardInfo"><p>' + produkter[j].prodDesc + '</p></div>';
                             showMoreInfo += '<div class = "cardBuy">';
                             showMoreInfo += '<h3>'+ produkter[j].prodPrice +'</h3>';
-                            showMoreInfo += '<h3 class = "buy"><a href = "#">Köp</a></h3></div>';
+                            showMoreInfo += '<h3 class = "buy"><a id="' + produkter[j].id + '" class = "buyProd" href = "#">Köp</a></h3></div>';
                     
                             $("#content").append(showMoreInfo)
+                            
                         }
-                        
                     }
+                    $(".buyProd").on("click",function() {
+                        var cartArray;
+                        var sendToCart = this.id;
+                        
+                            
+                        if(sessionStorage.getItem("cart") == null){
+                            cartArray = sessionStorage.setItem("cart", JSON.stringify([]));
+                        }
+                            
+                        cartArray = JSON.parse(sessionStorage.getItem("cart"));
+                            
+                        cartArray.push(sendToCart);
+                        sessionStorage.setItem("cart", JSON.stringify(cartArray));
+                    });
                     $(".showLess").on("click", function() {
                         //$(this).parent().children(".cardInfo").empty();
                         //$(this).parent().children(".showMore").show();
@@ -258,23 +273,25 @@ $( document ).ready(function() {
                     });
                     console.log(this.id)
                 });
-               
-
-                $(".buyProd").on("click",function(event) {
+                
+             
+                $(".buyProd").on("click",function() {
                     var cartArray;
                     var sendToCart = this.id;
-                 
                     
+                        
                     if(sessionStorage.getItem("cart") == null){
                         cartArray = sessionStorage.setItem("cart", JSON.stringify([]));
                     }
-                    
+                        
                     cartArray = JSON.parse(sessionStorage.getItem("cart"));
-                    
+                        
                     cartArray.push(sendToCart);
                     sessionStorage.setItem("cart", JSON.stringify(cartArray));
-                    
                 });
+                  
+                
+               
             }); 
 
              
