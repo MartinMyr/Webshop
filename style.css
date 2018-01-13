@@ -190,8 +190,10 @@ display:flex;
 #member {
   margin-left:50%;
   justify-content:center;
-
-  
+ 
+}
+#totPrice>h3{
+ text-align: center;
 }
 /*Produkt kort SLUT*/
 

@@ -66,85 +66,95 @@ $( document ).ready(function() {
 
         //Kundvagnen
         $("#toCart").click(function() {
-            
-       
-            $("#content").empty();
-            $("#backgroundContact").css("background-image","none");
-            
-            
-            var userLogin = '<span id = "totPrice"></span><div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
-            userLogin += '<input id = "username" type="text" name="username">';
-            userLogin += '<i class="fa fa-key" aria-hidden="true"></i>';
-            userLogin += '<input id = "password" type="password" name="psw">';
-            userLogin += '<button id = "submit">Ok</button></div>';
-            $("#content").append(userLogin);
-            $("#content").append("<h1 id = 'cartH1'>Varukorgen</h1>")
-
-            $("#content").append("<div class = 'prodCardWrapper'></div");
-            $("#content").append("<button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
-
-            
-            
-
-            //Skicka med från köp till kundvagn
-            
-            sendToCart = JSON.parse(sessionStorage.getItem("cart"));
-            
-            for (i = 0; i < sendToCart.length; i++) { 
-                for (j = 0; j < produkter.length; j++){
-                    if (sendToCart[i] == produkter[j].id){
-                        var appendCard = '<div class = "cards">';
-                        appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
-                        appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
-                        appendCard += '<h3>' + produkter[j].prodPrice  +' Kr</h3';
-                        appendCard += '</h3></div>';
-                        $(".prodCardWrapper").append(appendCard);
-                    }
-                }
-            } 
-                
-            if  (sessionStorage.getItem("cart") === null) {
-                $("#content").append("<h1>Du har inget i kundvagnen</h1>")
-                console.log("Du har inget i kundvagnen")
-            }else{
-               //var myInteger = parseInt($("h3").text());
-               ///$("#totPrice").append( myInteger + "+ 55kr i frakt. Totalt:" + Number(myInteger + 55)) 
-               //console.log(myInteger)
-            }
-
-            $("#member").click(function() {
+            cartRefresh()
+            function cartRefresh(){
+                $("#imgHolder").empty();
                 $("#content").empty();
-               
-                var form = '<form class = memberForm>';
-                form += '<h4>Namn</h4><input id = "formName" type = "text" name = "Namn"><br>';
-                form += '<h4>Email</h4><input id = "formEmail" type = "email" name = "Email"><br>';
-                form += '<h4>Telefonnumer</h4><input id = "formNumber" type = "number" name = "Telefon"><br>';
-                form += '<h4>Nyhetsbrev</h4><input id ="checkBoxNews" type="checkbox"><br>';
-                form += '<h4>Lösenord</h4><input id = "password1" type = "password"><br>';
-                form += '<h4>Repetera lösenord</h4><input id = "password2" type = "password"><br><br>';
-                form += '<button id ="submitForm">Skicka</button>';
-                form += '</form>'
-                $("#content").append("<h1 class = memberForm> Bli medlem</h1>")
-                $("#content").append(form);
-   
-                $("#submitForm").click(function() {
-                    var members = [];
-                  if($("#password1").val() == $("#password2").val()){
-                    if($('#checkBoxNews').is(':checked')){
-                        kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Ja"});
-                        cartRefresh();
-                        $("#member").remove();
-                    }else{
-                        kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Nej"});
-                        cartRefresh();
-                        $("#member").remove();
-                    }
-                  }else{
-                      alert("Lösenorden matchar inte!! :(")
-                  }
+                $("#backgroundContact").css("background-image","none");
+                
+                
+                var userLogin = '<div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
+                userLogin += '<input id = "username" type="text" name="username">';
+                userLogin += '<i class="fa fa-key" aria-hidden="true"></i>';
+                userLogin += '<input id = "password" type="password" name="psw">';
+                userLogin += '<button id = "submit">Ok</button></div>';
+                $("#content").append(userLogin);
+                $("#content").append("<h1 id = 'cartH1'>Varukorgen</h1>")
 
-                });  
-            });
+                $("#content").append("<div class = 'prodCardWrapper'></div");
+                $("#content").append("<span id = 'totPrice'><h3>55kr frakt Inkluderat Totalt:</h3></span><button id = 'member'>Bli medlem</button><button id = 'buyNow'>Slutför köp</button>");
+
+                
+                
+
+                //Skicka med från köp till kundvagn
+                
+                sendToCart = JSON.parse(sessionStorage.getItem("cart"));
+                var totPrice = 0;
+                for (i = 0; i < sendToCart.length; i++) { 
+                    for (j = 0; j < produkter.length; j++){
+                        if (sendToCart[i] == produkter[j].id){
+                            var appendCard = '<div class = "cards">';
+                            appendCard += '<div class = "cardPic"><img src = "' + produkter[j].prodImage + '"></div>';
+                            appendCard += '<div class = "cardName"><h1>' + produkter[j].prodName + '</h1></div>';
+                            appendCard += '<h3>' + produkter[j].prodPrice  +' Kr</h3';
+                            appendCard += '</h3></div>';
+                            $(".prodCardWrapper").append(appendCard);
+                        
+                            
+                            totPrice += produkter[j].prodPrice
+                            
+                            
+                        }
+                    }
+                    
+                } 
+                
+                $("#totPrice>h3").append(totPrice+ " kr")
+
+                if  (sessionStorage.getItem("cart") === null) {
+                    $("#content").append("<h1>Du har inget i kundvagnen</h1>")
+                    console.log("Du har inget i kundvagnen")
+                }else{
+                //var myInteger = parseInt($("h3").text());
+                ///$("#totPrice").append( myInteger + "+ 55kr i frakt. Totalt:" + Number(myInteger + 55)) 
+                //console.log(myInteger)
+                }
+
+                $("#member").click(function() {
+                    $("#content").empty();
+                
+                    var form = '<form class = memberForm>';
+                    form += '<h4>Namn</h4><input id = "formName" type = "text" name = "Namn"><br>';
+                    form += '<h4>Email</h4><input id = "formEmail" type = "email" name = "Email"><br>';
+                    form += '<h4>Telefonnumer</h4><input id = "formNumber" type = "number" name = "Telefon"><br>';
+                    form += '<h4>Nyhetsbrev</h4><input id ="checkBoxNews" type="checkbox"><br>';
+                    form += '<h4>Lösenord</h4><input id = "password1" type = "password"><br>';
+                    form += '<h4>Repetera lösenord</h4><input id = "password2" type = "password"><br><br>';
+                    form += '<button id ="submitForm">Skicka</button>';
+                    form += '</form>'
+                    $("#content").append("<h1 class = memberForm> Bli medlem</h1>")
+                    $("#content").append(form);
+    
+                    $("#submitForm").click(function() {
+                        var members = [];
+                    if($("#password1").val() == $("#password2").val()){
+                        if($('#checkBoxNews').is(':checked')){
+                            kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Ja"});
+                            cartRefresh();
+                            $("#member").remove();
+                        }else{
+                            kundLista.push({id: 3 ,name: $("#formName").val(), email: $("#formEmail").val(),number: $("#formNumber").val(),password: $("#password1").val(), newsletter: "Nej"});
+                            cartRefresh();
+                            $("#member").remove();
+                        }
+                    }else{
+                        alert("Lösenorden matchar inte!! :(")
+                    }
+
+                    });  
+                });
+            }
         });
        
 
