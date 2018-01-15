@@ -6,7 +6,7 @@
         "prodPrice": 1998,
         "huvudKat": 1,
         "underKat": 1,
-        "prodImage":"./prodPics/bas8.jpg"
+        "prodImage":"prodPics/bas8.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "prodPrice": 2498,
         "huvudKat": 1,
         "underKat": 1,
-        "prodImage":"/prodPics/bas10.jpg"
+        "prodImage":"prodPics/bas10.jpg"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "prodPrice": 2998,
         "huvudKat": 1,
         "underKat": 1,
-        "prodImage":"/prodPics/BASSW8.jpg"
+        "prodImage":"prodPics/BASSW8.jpg"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "prodPrice": 3398,
         "huvudKat": 1,
         "underKat": 1,
-        "prodImage":"/prodPics/SL-10S.jpg"
+        "prodImage":"prodPics/SL-10S.jpg"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "prodPrice": 3469,
         "huvudKat": 1,
         "underKat": 2,
-        "prodImage":"/prodPics/SL-8.jpg"
+        "prodImage":"prodPics/SL-8.jpg"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "prodPrice": 3996,
         "huvudKat": 1,
         "underKat": 2,
-        "prodImage":"/prodPics/ALTO55.jpg"
+        "prodImage":"prodPics/ALTO55.jpg"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "prodPrice": 4498,
         "huvudKat": 1,
         "underKat": 2,
-        "prodImage":"/prodPics/ZENSOR.jpg"
+        "prodImage":"prodPics/ZENSOR.jpg"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "prodPrice": 3398,
         "huvudKat": 1,
         "underKat": 2,
-        "prodImage":"/prodPics/SL-28.jpg"
+        "prodImage":"prodPics/SL-28.jpg"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "prodPrice": 4998,
         "huvudKat": 1,
         "underKat": 3,
-        "prodImage":"/prodPics/alto.jpg"
+        "prodImage":"prodPics/alto.jpg"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "prodPrice": 8894,
         "huvudKat": 1,
         "underKat": 3,
-        "prodImage":"/prodPics/M-1.jpg"
+        "prodImage":"prodPics/M-1.jpg"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "prodPrice": 7994,
         "huvudKat": 1,
         "underKat": 3,
-        "prodImage":"/prodPics/FAZON.jpg"
+        "prodImage":"prodPics/FAZON.jpg"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "prodPrice": 9493,
         "huvudKat": 1,
         "underKat": 3,
-        "prodImage":"/prodPics/PICO.jpg"
+        "prodImage":"prodPics/PICO.jpg"
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@
         "prodPrice": 1398,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/YOYO.jpg"
+        "prodImage":"prodPics/YOYO.jpg"
     },
     {
         "id": 14,
@@ -123,7 +123,7 @@
         "prodPrice": 1390,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/JBLFLIP4.jpg"
+        "prodImage":"prodPics/JBLFLIP4.jpg"
     },
     {
         "id": 15,
@@ -132,7 +132,7 @@
         "prodPrice": 1298,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/EnvayaDSB-200.jpg"
+        "prodImage":"prodPics/EnvayaDSB-200.jpg"
     },
     {
         "id": 16,
@@ -141,7 +141,7 @@
         "prodPrice": 998,
         "huvudKat": 1,
         "underKat": 4,
-        "prodImage":"/prodPics/Envayapocket.jpg"
+        "prodImage":"prodPics/Envayapocket.jpg"
     },
     {
         "id": 17,
@@ -150,7 +150,7 @@
         "prodPrice": 248,
         "huvudKat": 2,
         "underKat": 1,
-        "prodImage":"/prodPics/AH-C260.jpg"
+        "prodImage":"prodPics/AH-C260.jpg"
     },
     {
         "id": 18,
@@ -159,7 +159,7 @@
         "prodPrice": 398,
         "huvudKat": 2,
         "underKat": 1,
-        "prodImage":"/prodPics/EP1.jpg"
+        "prodImage":"prodPics/EP1.jpg"
     },
     {
         "id": 19,
@@ -168,7 +168,7 @@
         "prodPrice": 498,
         "huvudKat": 2,
         "underKat": 1,
-        "prodImage":"/prodPics/AH-C50MA.jpg"
+        "prodImage":"prodPics/AH-C50MA.jpg"
     },
     {
         "id": 20,
@@ -177,7 +177,7 @@
         "prodPrice": 890,
         "huvudKat": 2,
         "underKat": 1,
-        "prodImage":"/prodPics/MA750.jpg"
+        "prodImage":"prodPics/MA750.jpg"
     },
     {
         "id": 21,
@@ -186,7 +186,7 @@
         "prodPrice": 7498,
         "huvudKat": 2,
         "underKat": 2,
-        "prodImage":"/prodPics/AH-D7200.jpg"
+        "prodImage":"prodPics/AH-D7200.jpg"
     },
     {
         "id": 22,
@@ -195,7 +195,7 @@
         "prodPrice": 5998,
         "huvudKat": 2,
         "underKat": 2,
-        "prodImage":"/prodPics/NIGHTHAWK.jpg"
+        "prodImage":"prodPics/NIGHTHAWK.jpg"
     },
     {
         "id": 23,
@@ -204,7 +204,7 @@
         "prodPrice": 499,
         "huvudKat": 2,
         "underKat": 2,
-        "prodImage":"/prodPics/MDR-ZX660AP.jpg"
+        "prodImage":"prodPics/MDR-ZX660AP.jpg"
     },
     {
         "id": 24,
@@ -213,7 +213,7 @@
         "prodPrice": 8698,
         "huvudKat": 2,
         "underKat": 2,
-        "prodImage":"/prodPics/P9.jpg"
+        "prodImage":"prodPics/P9.jpg"
     },
     {
         "id": 25,
@@ -222,7 +222,7 @@
         "prodPrice": 1990,
         "huvudKat": 2,
         "underKat": 3,
-        "prodImage":"/prodPics/Elite.jpg"
+        "prodImage":"prodPics/Elite.jpg"
     },
     {
         "id": 26,
@@ -231,7 +231,7 @@
         "prodPrice": 748,
         "huvudKat": 2,
         "underKat": 3,
-        "prodImage":"/prodPics/SPORTPACE.jpg"
+        "prodImage":"prodPics/SPORTPACE.jpg"
     },
     {
         "id": 27,
@@ -240,7 +240,7 @@
         "prodPrice": 798,
         "huvudKat": 2,
         "underKat": 3,
-        "prodImage":"/prodPics/SPORTCOACH.jpg"
+        "prodImage":"prodPics/SPORTCOACH.jpg"
     },
     {
         "id": 28,
@@ -249,7 +249,7 @@
         "prodPrice": 1790,
         "huvudKat": 2,
         "underKat": 3,
-        "prodImage":"/prodPics/SPORTPULSE.jpg"
+        "prodImage":"prodPics/SPORTPULSE.jpg"
     },
     {
         "id": 29,
@@ -258,7 +258,7 @@
         "prodPrice": 228,
         "huvudKat": 2,
         "underKat": 4,
-        "prodImage":"/prodPics/SKUMSMARTCORE.jpg"
+        "prodImage":"prodPics/SKUMSMARTCORE.jpg"
     },
     {
         "id": 30,
@@ -267,7 +267,7 @@
         "prodPrice": 798,
         "huvudKat": 2,
         "underKat": 4,
-        "prodImage":"/prodPics/PERCH.jpg"
+        "prodImage":"prodPics/PERCH.jpg"
     },
     {
         "id": 31,
@@ -276,7 +276,7 @@
         "prodPrice": 948,
         "huvudKat": 2,
         "underKat": 4,
-        "prodImage":"/prodPics/DRAGONFLYBLACK.jpg"
+        "prodImage":"prodPics/DRAGONFLYBLACK.jpg"
     },
     {
         "id": 32,
@@ -285,7 +285,7 @@
         "prodPrice": 1898,
         "huvudKat": 2,
         "underKat": 4,
-        "prodImage":"/prodPics/DRAGONFLYRED.jpg"
+        "prodImage":"prodPics/DRAGONFLYRED.jpg"
     },
     {
         "id": 33,
@@ -294,7 +294,7 @@
         "prodPrice": 78,
         "huvudKat": 3,
         "underKat": 1,
-        "prodImage":"/prodPics/SXC7801.jpg"
+        "prodImage":"prodPics/SXC7801.jpg"
     },
     {
         "id": 34,
@@ -303,7 +303,7 @@
         "prodPrice": 98,
         "huvudKat": 3,
         "underKat": 1,
-        "prodImage":"/prodPics/OPTISKKABEL.jpg"
+        "prodImage":"prodPics/OPTISKKABEL.jpg"
     },
     {
         "id": 35,
@@ -312,7 +312,7 @@
         "prodPrice": 98,
         "huvudKat": 3,
         "underKat": 1,
-        "prodImage":"/prodPics/SXI4950.jpg"
+        "prodImage":"prodPics/SXI4950.jpg"
     },
     {
         "id": 36,
@@ -321,7 +321,7 @@
         "prodPrice": 98,
         "huvudKat": 3,
         "underKat": 1,
-        "prodImage":"/prodPics/SXC4102.jpg"
+        "prodImage":"prodPics/SXC4102.jpg"
     },
     {
         "id": 37,
@@ -330,7 +330,7 @@
         "prodPrice": 218,
         "huvudKat": 3,
         "underKat": 2,
-        "prodImage":"/prodPics/HDMI2RED.jpg"
+        "prodImage":"prodPics/HDMI2RED.jpg"
     },
     {
         "id": 38,
@@ -339,7 +339,7 @@
         "prodPrice": 358,
         "huvudKat": 3,
         "underKat": 2,
-        "prodImage":"/prodPics/FORESTHDMI.jpg"
+        "prodImage":"prodPics/FORESTHDMI.jpg"
     },
     {
         "id": 39,
@@ -348,7 +348,7 @@
         "prodPrice": 398,
         "huvudKat": 3,
         "underKat": 2,
-        "prodImage":"/prodPics/HDMI1WHITE.jpg"
+        "prodImage":"prodPics/HDMI1WHITE.jpg"
     },
     {
         "id": 40,
@@ -357,7 +357,7 @@
         "prodPrice": 398,
         "huvudKat": 3,
         "underKat": 2,
-        "prodImage":"/prodPics/HDMI1BLUE.jpg"
+        "prodImage":"prodPics/HDMI1BLUE.jpg"
     },
     {
         "id": 41,
@@ -366,7 +366,7 @@
         "prodPrice": 78,
         "huvudKat": 3,
         "underKat": 3,
-        "prodImage":"/prodPics/SLIP144.jpg"
+        "prodImage":"prodPics/SLIP144.jpg"
     },
     {
         "id": 42,
@@ -375,7 +375,7 @@
         "prodPrice": 85,
         "huvudKat": 3,
         "underKat": 3,
-        "prodImage":"/prodPics/Q2.jpg"
+        "prodImage":"prodPics/Q2.jpg"
     },
     {
         "id": 43,
@@ -384,7 +384,7 @@
         "prodPrice": 248,
         "huvudKat": 3,
         "underKat": 3,
-        "prodImage":"/prodPics/ROCKET33.jpg"
+        "prodImage":"prodPics/ROCKET33.jpg"
     },
     {
         "id": 44,
@@ -393,7 +393,7 @@
         "prodPrice": 458,
         "huvudKat": 3,
         "underKat": 3,
-        "prodImage":"/prodPics/ROCKET44.jpg"
+        "prodImage":"prodPics/ROCKET44.jpg"
     },
     {
         "id": 45,
@@ -402,7 +402,7 @@
         "prodPrice": 50,
         "huvudKat": 3,
         "underKat": 4,
-        "prodImage":"/prodPics/CTP1010.jpg"
+        "prodImage":"prodPics/CTP1010.jpg"
     },
     {
         "id": 46,
@@ -411,7 +411,7 @@
         "prodPrice": 128,
         "huvudKat": 3,
         "underKat": 4,
-        "prodImage":"/prodPics/SOUNDXTRA.jpg"
+        "prodImage":"prodPics/SOUNDXTRA.jpg"
     },
     {
         "id": 47,
@@ -420,7 +420,7 @@
         "prodPrice": 128,
         "huvudKat": 3,
         "underKat": 4,
-        "prodImage":"/prodPics/PLAY1.jpg"
+        "prodImage":"prodPics/PLAY1.jpg"
     },
     {
         "id": 48,
@@ -429,7 +429,7 @@
         "prodPrice": 198,
         "huvudKat": 3,
         "underKat": 4,
-        "prodImage":"/prodPics/301691.jpg"
+        "prodImage":"prodPics/301691.jpg"
     },
     {
         "id": 49,
@@ -438,7 +438,7 @@
         "prodPrice": 8490,
         "huvudKat": 4,
         "underKat": 1,
-        "prodImage":"/prodPics/CXUHD.jpg"
+        "prodImage":"prodPics/CXUHD.jpg"
     },
     {
         "id": 50,
@@ -447,7 +447,7 @@
         "prodPrice": 7398,
         "huvudKat": 4,
         "underKat": 1,
-        "prodImage":"/prodPics/DBT-3313UD.jpg"
+        "prodImage":"prodPics/DBT-3313UD.jpg"
     },
     {
         "id": 51,
@@ -456,7 +456,7 @@
         "prodPrice": 3790,
         "huvudKat": 4,
         "underKat": 1,
-        "prodImage":"/prodPics/UBD-M9500.jpg"
+        "prodImage":"prodPics/UBD-M9500.jpg"
     },
     {
         "id": 52,
@@ -465,7 +465,7 @@
         "prodPrice": 1298,
         "huvudKat": 4,
         "underKat": 1,
-        "prodImage":"/prodPics/BDP-S3700B.jpg"
+        "prodImage":"prodPics/BDP-S3700B.jpg"
     },
     {
         "id": 53,
@@ -474,7 +474,7 @@
         "prodPrice": 3598,
         "huvudKat": 4,
         "underKat": 2,
-        "prodImage":"/prodPics/AVR-X540BT.jpg"
+        "prodImage":"prodPics/AVR-X540BT.jpg"
     },
     {
         "id": 54,
@@ -483,7 +483,7 @@
         "prodPrice": 8398,
         "huvudKat": 4,
         "underKat": 2,
-        "prodImage":"/prodPics/AVR.jpg"
+        "prodImage":"prodPics/AVR.jpg"
     },
     {
         "id": 55,
@@ -492,7 +492,7 @@
         "prodPrice": 27398,
         "huvudKat": 4,
         "underKat": 2,
-        "prodImage":"/prodPics/AVR-X7200WA.jpg"
+        "prodImage":"prodPics/AVR-X7200WA.jpg"
     },
     {
         "id": 56,
@@ -501,7 +501,7 @@
         "prodPrice": 39998,
         "huvudKat": 4,
         "underKat": 2,
-        "prodImage":"/prodPics/M27.jpg"
+        "prodImage":"prodPics/M27.jpg"
     },
     {
         "id": 57,
@@ -510,7 +510,7 @@
         "prodPrice": 6490,
         "huvudKat": 4,
         "underKat": 3,
-        "prodImage":"/prodPics/HD27.jpg"
+        "prodImage":"prodPics/HD27.jpg"
     },
     {
         "id": 58,
@@ -519,7 +519,7 @@
         "prodPrice": 39998,
         "huvudKat": 4,
         "underKat": 3,
-        "prodImage":"/prodPics/HD39.jpg"
+        "prodImage":"prodPics/HD39.jpg"
     },
     {
         "id": 59,
@@ -528,7 +528,7 @@
         "prodPrice": 12490,
         "huvudKat": 4,
         "underKat": 3,
-        "prodImage":"/prodPics/EH-TW6700.jpg"
+        "prodImage":"prodPics/EH-TW6700.jpg"
     },
     {
         "id": 60,
@@ -537,7 +537,7 @@
         "prodPrice": 19790,
         "huvudKat": 4,
         "underKat": 3,
-        "prodImage":"/prodPics/GT5500.jpg"
+        "prodImage":"prodPics/GT5500.jpg"
     },
     {
         "id": 61,
@@ -546,7 +546,7 @@
         "prodPrice": 4290,
         "huvudKat": 4,
         "underKat": 4,
-        "prodImage":"/prodPics/UE32M5605.jpg"
+        "prodImage":"prodPics/UE32M5605.jpg"
     },
     {
         "id": 62,
@@ -555,7 +555,7 @@
         "prodPrice": 4390,
         "huvudKat": 4,
         "underKat": 4,
-        "prodImage":"/prodPics/KDL-32WD753.jpg"
+        "prodImage":"prodPics/KDL-32WD753.jpg"
     },
     {
         "id": 63,
@@ -564,7 +564,7 @@
         "prodPrice": 5490,
         "huvudKat": 4,
         "underKat": 4,
-        "prodImage":"/prodPics/UE43MU6175.jpg"
+        "prodImage":"prodPics/UE43MU6175.jpg"
     },
     {
         "id": 64,
@@ -573,7 +573,7 @@
         "prodPrice": 5990,
         "huvudKat": 4,
         "underKat": 4,
-        "prodImage":"/prodPics/UE43M5515.jpg"
+        "prodImage":"prodPics/UE43M5515.jpg"
     }
 
    

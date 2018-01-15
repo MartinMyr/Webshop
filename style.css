@@ -11,6 +11,15 @@ margin:auto;
   background-attachment: fixed;
   background-position: center;
   background-size:cover;
+  height:100%;
+}
+#background-info{
+  background-image: url('records.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+  height:100%;
 }
 .mySlides{
   width:100%;
@@ -54,6 +63,7 @@ margin:auto;
   height:50px;
   background-color:rgb(39, 38, 38);
   border-bottom:3px  inset   rgba(19, 18, 18, 0.671); 
+  justify-content: space-around;
 }
 #header3{
   width:100%;
@@ -61,11 +71,14 @@ margin:auto;
   background-color:rgb(39, 38, 38);
 }
 .logo > h1{
-  margin-left:10vw;
-  padding-top:12px;
+  padding-top:10px;
   margin-top:0px;
+  margin-right:40vw;
 }
-
+.logo>h1>a:hover{
+  background-color:rgb(39, 38, 38);
+ color:white;
+}
 #footer{
   height:35px;
   width:100%;
@@ -83,13 +96,23 @@ margin:auto;
   flex-direction: row;
   display:flex;
 }
-ul{list-style: none;
-}
-.cart{
- padding-left:60vw;
+ul{
+  list-style: none;
 }
 .cart>a:hover{
   background-color:rgb(39, 38, 38);
+
+}
+
+#numbersInCart{
+  background-color:red;
+  width:25px;
+  border-radius: 50%;
+  text-align: center;
+ 
+}
+.cart{
+  display:flex;
 }
 #userLogin{
  text-align: end;
@@ -126,8 +149,6 @@ th{
 .cardPic>img{
   width:100%;
   width:100%;
-  
- 
 }
 .prodCardWrapper{
   display:flex;
@@ -161,9 +182,44 @@ th{
 
 .moreInfo > .cardPic > img{
 width:340px;
-
 display:flex;
 }
+.buyProd{
+  color:white;
+}
+.buyProd:hover{
+  background-color:rgb(190, 184, 184);
+}
+
+
+/* Info korten*/
+#info{
+  margin-top: 10vh;
+}
+#workers{
+margin-top:10vh;
+display: flex;  
+height: 100%;
+}
+.teamCard{
+ width: 40%;
+}
+.profileImg>img{
+  max-width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+.profileImg{
+  display: flex;
+  justify-content: space-around;
+}
+.textInfo{
+  text-align:center;
+}
+
+
+
+
 
 .cardName,.cardInfo, .cardBuy {
   text-align: center;
@@ -187,13 +243,16 @@ display:flex;
 .buy > a:link{
   color:white;
 }
-#member {
+#member,#buyNow {
   margin-left:50%;
   justify-content:center;
  
 }
 #totPrice>h3{
  text-align: center;
+}
+#emptyCart{
+  text-align: center;
 }
 /*Produkt kort SLUT*/
 
@@ -330,3 +389,13 @@ a{
   .dropdown:hover .dropdown-content0, .dropdown:hover .dropdown-content1, .dropdown:hover .dropdown-content2,.dropdown:hover .dropdown-content3  {
     display: block;
   }
+
+
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+body{
+  background-color:blue;
+}
+}

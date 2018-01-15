@@ -1,4 +1,12 @@
 $( document ).ready(function() {
+    fetch("produkter.json")
+    .then(function(response)
+        {
+        return response.json();
+    })
+    .then(function(postsCollection2)
+    {
+        produkter = postsCollection2;
     fetch("kunder.json")
     .then(function(response)
     {
@@ -87,17 +95,31 @@ $( document ).ready(function() {
             for (i = 0; i < members.length; i++) {
                 $(".kundTable").append("<tr><th>"+members[i].email+"</th><th>"+members[i].newsletter+"</th></tr>")
                 if(members[i].newsletter === "Ja"){
-                    $("#emailCopy").append("<li class = 'memberForm'>"+members[i].email+", </li>")
+                    $("#emailCopy").append("<li class = 'memberForm'>"+ members[i].email + ", </li>")
                 };
                 
             };
         
         
         });
+
         $( "#orderAdmin" ).click(function() {
-        
+            $("#content").empty();
+            $("#content").append("<table class = 'kundTable'><tr> <th>Produkt namn:</th><th>id:</th></tr></table>"); 
+            prodAdmin = JSON.parse(localStorage.getItem("admin"));
+            for (i = 0; i < prodAdmin.length; i++){
+                for (j = 0; j < produkter.length; j++){
+                    if (prodAdmin[i] == produkter[j].id){
+                        console.log(produkter[j].prodName)
+                        $(".kundTable").append("<tr><th>"+produkter[j].prodName+"</th><th>"+produkter[j].id+"</th></tr>")
+                    }
+           
+                }    
+                
+            }; 
         });
         
        
     });
+});
 });
