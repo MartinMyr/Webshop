@@ -394,7 +394,7 @@ a{
   @media (min-width:320px)  {
     #header2{
       display:flex;
-      justify-content: unset;
+     
     }
     .logo>h1>a{
       color:white;
