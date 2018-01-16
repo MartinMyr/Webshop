@@ -11,7 +11,7 @@ $( document ).ready(function() {
     {
     huvudKat = postsCollection;
           
-    fetch("underKategorier.json")
+    fetch("underkategorier.json")
     .then(function(response)
         {
         return response.json();
@@ -39,7 +39,6 @@ $( document ).ready(function() {
     .then(function(postsCollection3)
     {
         kundLista = postsCollection3;
-     
  
         //Startup functions
         meny();
@@ -67,12 +66,13 @@ $( document ).ready(function() {
             cartRefresh();
            
             function cartRefresh(){
+                
                 $("#imgHolder").empty();
                 $("#content").empty();
                 $("#backgroundContact").css("background-image","none");
                 
                 //Användar login
-                status();
+              
 
                 var userLogin = '<div id = "userLogin"> <i class="fa fa-user" aria-hidden="true"></i>';
                 userLogin += '<input id = "username" type="text" name="username">';
@@ -90,38 +90,38 @@ $( document ).ready(function() {
                     var user = members[i].email;
                     var password = members[i].password;
                 }
-              
-                $("#submit").click(function () {
+                status();
+                $("#loginButton").click(function () {
                     if ($("#username").val() == user && $("#password").val() == password) {
-                        sessionStorage.ourUser = user;
+                        sessionStorage.custUser = user;
                         showMemberPage(); 
+                       
                     }
                 });
         
                 $("#logOutButton").click(function () {
-                    sessionStorage.removeItem("ourUser");
+                    sessionStorage.removeItem("custUser");
                     showStartPage();
                     $("#content").empty();
                 });
                 function showMemberPage() {
                     $("#logOutButton").show();
                     $("#loginButton").hide();
-                    alert("<h1>Välkommern"+user+"</h1>")
+                    $("#username").hide();
+                    $("#password").hide();
+                    $("#loginButton").hide(1500);
+                    alert("Välkommern "+user)
                 };
                 function showStartPage() {
                     $("#logOutButton").hide();
                     $("#loginButton").show();
                 };
-                
-                $( "#loginButton" ).click(function() {
-                    $("#loginButton").hide(1500);
-                    $(".formInlogg").show(1500);
-                });
+        
             
                 //Login funktion
         
                 function status(){
-                    if (sessionStorage.ourUser != null) {
+                    if (sessionStorage.custUser != null) {
                         showMemberPage();
                     } else {
                         showStartPage();

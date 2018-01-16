@@ -105,13 +105,14 @@ $( document ).ready(function() {
 
         $( "#orderAdmin" ).click(function() {
             $("#content").empty();
-            $("#content").append("<table class = 'kundTable'><tr> <th>Produkt namn:</th><th>id:</th></tr></table>"); 
+            $("#content").append("<table class = 'kundTable'><tr><th>Kund:</th> <th>Produkt namn:</th><th>id:</th></tr></table>"); 
             prodAdmin = JSON.parse(localStorage.getItem("admin"));
+            members = JSON.parse(localStorage.getItem("members"));
             for (i = 0; i < prodAdmin.length; i++){
                 for (j = 0; j < produkter.length; j++){
                     if (prodAdmin[i] == produkter[j].id){
                         console.log(produkter[j].prodName)
-                        $(".kundTable").append("<tr><th>"+produkter[j].prodName+"</th><th>"+produkter[j].id+"</th></tr>")
+                        $(".kundTable").append("<tr><th>"+members[2].email+"</th><th>"+produkter[j].prodName+"</th><th>"+produkter[j].id+"</th></tr>")
                     }
            
                 }    
