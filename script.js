@@ -11,7 +11,7 @@ $( document ).ready(function() {
     {
     huvudKat = postsCollection;
           
-    fetch("underkategorier.json")
+    fetch("underKategorier.json")
     .then(function(response)
         {
         return response.json();
@@ -39,8 +39,6 @@ $( document ).ready(function() {
     .then(function(postsCollection3)
     {
         kundLista = postsCollection3;
-
-        
      
  
         //Startup functions
@@ -249,7 +247,6 @@ $( document ).ready(function() {
 
 
         function meny(){
-
             //Funktion för sortering av Huvud och under meny
             underKat.sort(function(a, b){
                 var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
@@ -298,13 +295,13 @@ $( document ).ready(function() {
             };
             //Få ut alla relaterade produkter till huvudkategorin
             $(".dropdown").on("click",function(){
+                $("#background-info").css("background-image","none");
                 $("#content").empty();
                 $("#content").append("<div class = 'prodCardWrapper'></div>");
                 $("#backgroundContact").css("background-image","none");
                 $(".prodCardWrapper").empty();
                 for (i = 0; i < huvudKat.length; i++){
                     for (j = 0; j < produkter.length; j++){
-                        console.log(this.id)
                         if(this.id == huvudKat[i].id && this.id == produkter[j].huvudKat){
                             appendCard();
                             
@@ -317,12 +314,12 @@ $( document ).ready(function() {
            
             $(".underMeny").on("click",  function(event) {
                 event.stopPropagation();
+                $("#background-info").css("background-image","none");
                 $("#content").empty();
                 $("#content").append("<div class = 'prodCardWrapper'></div>");
                 $("#backgroundContact").css("background-image","none");
                 for (i = 0; i < underKat.length; i++){
                 for (j = 0; j < produkter.length; j++){
-                    console.log($(this).text())
                     if(produkter[j].underKat == underKat[i].under && $(this).text() == underKat[i].name && produkter[j].huvudKat == underKat[i].huvudkategori){
                         appendCard();
                     };    
